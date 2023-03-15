@@ -1,0 +1,8 @@
+#!/bin/sh
+
+player=.cargo/bin/glide
+
+qeury=$(echo | rofi -dmenu -i -p "Search Qeury")
+url="https://odysee.com/$(curl -s "https://lighthouse.lbry.com/search?s=$(echo $qeury | tr ' ' '-')" | jq ".[].name" | grep -v "^\"@" | cut -d\" -f 2 | awk '{print $0}' | tr '-' ' ' | rofi -dmenu -i -p 'Select Video' -l 20 | tr ' ' '-')"
+#curl $url
+WAYLAND_DISPLAY= $player $(curl $url | awk -F'"contentUrl": "' '{print $2}' | awk -F'",' '{print $1}')

@@ -1,0 +1,209 @@
+
+/* =============================================================================
+ *
+ * Waybar configuration
+ *
+ * Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
+ *
+ * =========================================================================== */
+
+/* import css definitions for current theme */
+
+/* -----------------------------------------------------------------------------
+ * Keyframes
+ * -------------------------------------------------------------------------- */
+
+
+/* -----------------------------------------------------------------------------
+ * Base styles
+ * -------------------------------------------------------------------------- */
+
+/* Reset all styles */
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "DejaVu";
+}
+
+/* The whole bar */
+#waybar {
+    background: linear-gradient(to bottom, rgba(0,0,0,.90), rgba(0,0,0,.86));
+    font-size: 14px;
+}
+
+/* Each module */
+#custom-pacman,
+#custom-menu,
+#custom-help,
+#custom-files,
+#custom-ssh,
+#custom-scratchpad,
+#custom-github,
+#custom-clipboard,
+#custom-powerbar,
+#bluetooth,
+#battery,
+#clock,
+#cpu,
+#memory,
+#mode,
+#network,
+#pulseaudio,
+#temperature,
+#idle_inhibitor,
+#backlight,
+#language,
+#custom-sunset,
+#custom-playerctl,
+#custom-weather,
+#tray {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #cdd;
+}
+
+.modules-left, .modules-right {
+    /*margin: 3px;*/
+}
+
+.modules-center, .modules-right {
+    padding: 3px;
+}
+
+
+/* -----------------------------------------------------------------------------
+ * Module styles
+ * -------------------------------------------------------------------------- */
+
+#custom-scratchpad {
+    background-color: @theme_selected_bg_color;
+}
+
+#battery {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#battery.warning {
+    color: @warning_color;
+    background-color: transparent;
+}
+
+#battery.critical {
+    color: @error_color;
+}
+
+#battery.warning.discharging {
+    animation-name: blink-warning;
+    animation-duration: 3s;
+}
+
+#battery.critical.discharging {
+    animation-name: blink-critical;
+    animation-duration: 2s;
+}
+
+#clock {
+    font-weight: bold;
+}
+
+#cpu.warning {
+    color: @warning_color;
+    background-color: transparent;
+}
+
+#cpu.critical {
+    color: @error_color;
+}
+
+#memory {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#memory.warning {
+    color: @warning_color;
+    background-color: transparent;
+}
+
+#memory.critical {
+    color: @error_color;
+    animation-name: blink-critical;
+    animation-duration: 2s;
+}
+
+#mode {
+    background: @background_color;
+    background: red;
+}
+
+#network.disconnected, #network.disabled {
+    color: @warning_color;
+    background-color: transparent;
+}
+
+#pulseaudio.muted {
+    color: @warning_color;
+    background-color: transparent;
+}
+
+#temperature.critical {
+    color: @error_color;
+}
+
+#window {
+    font-weight: bold;
+    margin-right: 25px;
+    color: @theme_selected_bg_color;
+}
+
+#workspaces button,
+#custom-menu,
+#custom-files,
+#custom-ssh {
+    color: #cdd;
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 12px;
+    font-weight: normal;
+}
+
+#custom-ssh {
+    margin-right: 7px;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#workspaces button.focused {
+    border-color: @theme_selected_bg_color;
+    /*color: @wm_icon_bg;*/
+    /*background-color: @theme_selected_bg_color;*/
+}
+
+#workspaces button.urgent {
+    border-color: @error_color;
+    color: @error_color;
+}
+
+#custom-pacman {
+    color: @warning_color;
+    background-color: transparent;
+}
+
+#bluetooth.off {
+    color: @warning_color;
+    background-color: transparent;
+}
+
+#custom-wf-recorder {
+    color: @error_color;
+    padding-right: 10px;
+}
