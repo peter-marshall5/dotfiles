@@ -13,119 +13,37 @@ set $left h
 set $down j
 set $up k
 set $right l
-# Your preferred terminal emulator
-#set $term kitty
 exec foot -s
-set $term footclient
-set $term_float footclient -e
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
-#set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $term alacritty
 
 xwayland enable
 
-# styles - set the folder for your theme defination file
-set $theme .config/sway/macha-green
-
-#theme variables
-#include $theme/definitions
-
 # mako
 exec mako --text-color "#ffffff" --border-color "#50efa0" --background-color "#303030" --border-size 3 --width 400 --height 200 --padding 20 --margin 20 --default-timeout 15000
-#exec_always mako --text-color "$text-color" --border-color "$accent-color" --background-color "$background-color" --border-size 3 --width 400 --height 200 --padding 20 --margin 20 --default-timeout 15000
 
 # rofi
-#set $menu wofi --show drun
-set $menu rofi -show drun -theme .config/rofi/custom.rasi -display-drun "Run"
+set $menu rofi -show drun -theme .config/rofi/config.rasi
 
 # Pulseaudio Config
 set $pulseaudio pavucontrol
 
 ### Output configuration
-#
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1366x768.png fill
-output * bg ~/.wallpaper fill
-#
-# Example configuration:
-#
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
-#
-# You can get the names of your outputs by running: swaymsg -t get_outputs
+output * bg ~/.wallpaper.jpg fill
 
-# Monitor to the right
-output eDP-1 resolution 1366x768 position 0,520
-#output eDP-1 resolution 1366x768@60.016Hz position 0,0
+output eDP-1 resolution 2880x1920@120Hz position 0,0 scale 2
 output HDMI-A-1 resolution 1920x1080@75.025Hz position 1366,0
-#output * adaptive_sync on
 
-# Monitor to the left
-#output eDP-1 resolution 1366x768 position 1920,520
-#output HDMI-A-1 resolution 1920x1080 position 0,0
+output * adaptive_sync off
 
-output * adaptive_sync on
-
-### Idle configuration
-#
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylockd' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylockd'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
-
-#exec swayidle -w \
-#        timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#        before-sleep '/usr/lib/kscreenlocker_greet'
 exec_always swayidle -w \
-        timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-        before-sleep 'swaylockd --clock --screenshots --effect-blur 160x2 --effect-vignette 0.6:0.2 --grace 0 --fade-in 0'
-#exec_always swayidle -w \
-#        timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#        before-sleep 'swaylock \
-#        --screenshots \
-#        --clock \
-#        --indicator \
-#        --indicator-radius 100 \
-#        --indicator-thickness 7 \
-#        --effect-pixelate 50 --effect-blur 7x5 \
-#        --effect-vignette 0.5:0.5 \
-#        --ring-color bb00cc \
-#        --key-hl-color 880033 \
-#        --line-color 00000000 \
-#        --inside-color 00000088 \
-#        --separator-color 00000000 \
-#        --grace 2 \
-#        --fade-in 0.2'
+        timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylockd'
 
 # Start pipewire
 exec dbus-update-activation-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway 
 exec /usr/libexec/pipewire-launcher
 exec /usr/libexec/xdg-desktop-portal
 
-# Bluetooth manager applet
-exec blueman-applet
-
-### Input configuration
-#
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
-#
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
-
-input "1267:97:Elan_Touchpad" {
+input "1118:2479:Microsoft_Surface_045E:09AF_Touchpad" {
     dwt enabled
     tap enabled
     natural_scroll enabled
@@ -288,16 +206,6 @@ bar {
     position top
 
     swaybar_command waybar
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
 }
 
 # volume / brightness / media controls
@@ -322,35 +230,25 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym Print exec /usr/bin/sway-interactive-screenshot
 
 # Adjust color temperature to reduce eye strain
-#exec_always sh -c "pkill -9 gammastep; gammastep -l '45.27:-75.9'"
-exec_always wlsunset -l 45.2 -L -75.9 -t 2200
+exec_always wlsunset -l 45.2 -L -75.9 -t 2800
 
 # Breeze Cursor
 seat * xcursor_theme breeze_cursors 24
 exec_always gsettings set org.gnome.desktop.interface cursor-theme "breeze_cursors"
 exec_always gsettings set org.gnome.desktop.interface cursor-size 24
 
-exec_always gsettings set org.gnome.desktop.interface gtk-theme Breath
-exec_always gsettings set org.gnome.desktop.interface icon-theme "breeze"
-
 # Polkit Authentication Dialog
 exec /usr/lib/polkit-kde-authentication-agent-1
-
-#exec oguri
-#exec_always pkill -9 swayblur
-#exec_always swayblur -a 1
-
-#exec_always wl-gammactl -c 0.971 -b 0.979 -g 0.971 
 
 smart_gaps on
 
 smart_borders on
 
-default_border pixel
+default_border pixel 5
 
 hide_edge_borders smart_no_gaps
 
-gaps inner 4
+gaps inner 1
 
 # set floating mode for specific applications
 for_window [instance="lxappearance"] floating enable
@@ -379,8 +277,8 @@ for_window [title="^Authentication Required"] floating enable
 
 
 # some global theme specific variables
-set $gtk-theme Matcha-dark-sea
-set $icon-theme Papirus-Dark-Maia
+set $gtk-theme Breeze-Dark
+set $icon-theme Breeze-Dark
 set $cursor-theme xcursor-breeze
 set $gui-font Roboto 11
 set $term-font RobotoMono Nerd Font 14
@@ -402,6 +300,7 @@ set $color12 #16a085
 set $color13 #55b5db
 set $color14 #a074c4
 set $color15 #8a553f
+set $clear #00000000
 
 #$color0
 set $background-color $color0
@@ -414,9 +313,9 @@ set $accent-color $color12
 
 # Basic color configuration using the Base16 variables for windows and borders.
 # Property Name         Border  BG       Text    Indicator Child Border
-client.focused          $color5 $color12 $color0 $color6   $color12
-client.focused_inactive $color1 $color1  $color5 $color3   $color1
-client.unfocused        $color1 $color0  $color5 $color6   $color1
+client.focused          $color5 $color12 $color0 $clear    $clear
+client.focused_inactive $color1 $color1  $color5 $clear    $clear
+client.unfocused        $color1 $color0  $color5 $clear    $clear
 client.urgent           $color8 $color8  $color0 $color9   $color8
 client.placeholder      $color0 $color0  $color5 $color0   $color0
 client.background       $color7
@@ -431,3 +330,5 @@ exec /usr/libexec/xdg-desktop-portal-wlr
 exec /usr/libexec/xdg-desktop-portal
 
 exec autotiling
+
+exec easyeffects --gapplication-service

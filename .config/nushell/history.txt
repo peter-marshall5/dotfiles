@@ -1,0 +1,5259 @@
+rm .config/nushell/ -r
+cp peter-marshall5-dotfiles/.config/nushell/ .config/
+cp peter-marshall5-dotfiles/.config/nushell/ .config/ -r
+config nu
+config env
+cd
+config env
+toolbox enter
+rpm-ostree install fontawesome-fonts
+systemctl reboot
+rpm-ostree install fontawesome-fonts
+rpm-ostree install nerd-fonts
+toolbox enter
+config env
+ls
+config env
+lllllll
+toolbox enter
+rpm-ostree install dejavu-fonts-all
+sudo rpm-ostree aply-live
+sudo rpm-ostree apply-live
+ls
+top
+;s
+ls
+flatpak update
+rpm-ostree upgrade
+top
+wget https://github.com/linux-surface/linux-surface/releases/download/silverblue-20201215-1/kernel-20201215-1.x86_64.rpm
+rpm-ostree override replace ./*.rpm \
+bash
+systemctl reboot
+htop
+top
+cd surface-gpe/
+git pull
+git reset --hard
+git pull
+make
+toolbox enter
+sudo insmod module/surface_gpe.ko
+/lib/modules/6.2.6-1.surface.fc37.x86_64/build/
+toolbox enter
+sudo insmod module/surface_gpe.ko
+toolbox enter
+sudo insmod module/surface_gpe.ko
+sudo dmesg
+git pull
+git reset --hard
+git pull
+cd
+rm surface-gpe/ -r
+git clone https://github.com/linux-surface/surface-gpe
+cd surface-gpe/
+toolbox enter
+sudo insmod module/surface_gpe.ko
+nvim module/surface_gpe.c
+cd surface-gpe/
+sudo insmod module/surface_gpe.ko
+sudo dmesg
+nvim module/surface_gpe.c
+sudo dmidecode
+sudo dmidecode | grep Pro
+nvim module/surface_gpe.c
+sudo insmod module/surface_gpe.ko
+sudo dmesg
+sudo insmod module/surface_gpe.ko
+cd surface-gpe/
+sudo insmod module/surface_gpe.ko
+sudo dmesg
+systemctl status tlp
+sudo systemctl enable tlp
+sudo systemctl start tlp
+sudo powertop
+sudo nano /etc/tlp.conf
+ls linux-6.2.2/
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.7.tar.xz | tar xJvf -
+tar xJvf linux-6.2.7.tar.xz
+cd linux-6.2.7/
+cp ../linux-6.2.2/.config .clang-format
+cp ../linux-6.2.2/.config .
+cd ..
+rm linux-6.2.7 -r
+tar xJvf linux-6.2.7.tar.xz
+cd linux-6.2.7/
+cp ../linux-6.2.2/.config .
+top
+ls rpmbuild/RPMS/x86_64/kernel-6.2.7-1.x86_64.rpm
+rpm-ostree override install rpmbuild/RPMS/x86_64/kernel-6.2.7-1.x86_64.rpm
+rpm-ostree override replace rpmbuild/RPMS/x86_64/kernel-6.2.7-1.x86_64.rpm
+rpm-ostree override replace rpmbuild/RPMS/x86_64/kernel-6.2.7-1.x86_64.rpm --uninstall linux-surface
+ls /sys/bus/iio/devices/iio:device0/name
+cat /sys/bus/iio/devices/*/name
+cat /sys/bus/iio/devices/iio:device0/name
+cat /sys/bus/iio/devices/iio:device1/
+cat /sys/bus/iio/devices/iio:device1/name
+cat /sys/bus/iio/devices/iio:device2/name
+cat /sys/bus/iio/devices/iio:device3/name
+rpm-ostree override replace rpmbuild/RPMS/x86_64/kernel-6.2.7-1.x86_64.rpm --uninstall kernel-surface
+cat /sys/bus/iio/devices/iio:device4/name
+cat /sys/bus/iio/devices/iio:device5/name
+cat /sys/bus/iio/devices/iio:device5/in_illuminance_raw
+cat /sys/bus/iio/devices/iio:device2/name
+cat /sys/bus/iio/devices/iio:device5/in_illuminance_raw
+systemctl reboot
+git clone git@codeberg.org:petms/claw-engine.git
+cat .ssh/id_ed25519.pub
+git clone git@codeberg.org:petms/claw-engine.git
+cd claw-engine/
+cargo run
+toolbox enter
+cargo run
+config env
+cd claw-engine/
+cargo run
+cd claw-engine/
+config env
+alias 
+alias -h
+config env
+toolbox -h
+toolbox run cargo build
+config env
+cd claw-engine/
+cargo run
+toolbox enter
+nvim src/project.rs
+cargo run
+rpm-ostree override replace rpmbuild/RPMS/x86_64/kernel-6.2.7-2.x86_64.rpm
+toolbox enter
+rpm-ostree override replace rpmbuild/RPMS/x86_64/kernel-6.2.7-2.x86_64.rpm
+toolbox enter
+systemctl reboot
+uname -r
+flatpak update
+sudo powertop
+cd claw-engine/
+cargo run
+cd
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+sudo insmod module/surface_gpe.ko
+cd surface-gpe/
+sudo insmod module/surface_gpe.ko
+toolbox enter
+cd
+cd claw-engine/
+nvim src/project.rs
+x
+cd
+rpm-ostree install auto-cpufreq
+git clone https://github.com/AdnanHodzic/auto-cpufreq.git
+cd auto-cpufreq && sudo ./auto-cpufreq-installer
+cd auto-cpufreq/
+ls
+sudo ./auto-cpufreq-installer
+auto-cpufreq 
+auto-cpufreq --help
+auto-cpufreq --monitor
+sudo auto-cpufreq --monitor
+sudo systemctl disable tlp
+sudo systemctl stop tlp
+sudo auto-cpufreq --monitor
+top
+sudo dmesg
+sudo auto-cpufreq --help
+sudo auto-cpufreq --live
+cat /sys/class/power_supply/BAT1/capacity
+cat /sys/class/power_supply/BAT1/power_now
+clear
+config env
+systemctl status power-profiles-daemon
+sudo systemctl stop power-profiles-daemon
+sudo systemctl disable power-profiles-daemon
+systemctl status auto-cpufreq
+systemctl status autocpufreq
+sudo auto-cpufreq --install
+systemctl status tlp
+systemctl re
+systemctl reboot
+systemctl status tlp
+systemctl status power-profiles-daemon
+systemctl status autocpufreq
+systemctl status auto-cpufreq
+sudo systemctl mask power-profiles-daemon
+systemctl status auto-cpufreq
+sudo systemctl start auto-cpufreq
+systemctl status auto-cpufreq
+systemctl status power-profiles-daemon
+sudo systemctl stop power-profiles-daemon
+sudo systemctl restart auto-cpufreq
+systemctl status power-profiles-daemon
+sensors
+top
+sudo powertop
+cat /sys/class/power_supply/BAT1/technology
+cat /sys/class/power_supply/BAT1/alarm
+cat /sys/class/power_supply/BAT1/power_now
+cat /sys/class/power_supply/BAT1/voltage_now
+cat /sys/class/power_supply/BAT1/power_now
+cat /sys/class/power_supply/BAT1/voltage_now
+cat /sys/class/power_supply/BAT1/power_now
+sensors
+sudo dmesg | grep -i aspm
+sudo systemctl start tlp
+sensors
+sudo systemctl stop tlp
+sudo dmesg | grep -i aspm
+sensors
+toolbox enter
+rpm-ostree
+rpm-ostree kargs editor
+rpm-ostree kargs
+rpm-ostree kargs -h
+sudo lspci -vv | grep 'ASPM.*abled;'
+sudo nano /etc/udev/rules.d/pci_pm.rules
+sudo nano /etc/udev/rules.d/50-usb_power_save.rules
+lsmod | grep iwl
+sudo nano /etc/modprobe.d/iwlwifi.conf
+modinfo iwldvm
+modinfo iwlmvm
+sudo nano /etc/modprobe.d/iwlwifi.conf
+echo powersupersave | sudo tee /sys/module/pcie_aspm/parameters/policy
+sudo cat /sys/module/pcie_aspm/parameters/policy
+sensors
+rpm-ostree kargs --editor
+sudo lspci -vv | grep 'ASPM.*abled;'
+systemctl reboot
+sudo lspci -vv | grep 'ASPM.*abled;'
+sensors
+top
+sudo mount / -o remount,noautodefrag
+sensors
+top
+sensors
+sudo dmesg | grep -i aspm
+sensors
+sudo cat /sys/module/pcie_aspm/parameters/policy
+sudo nano /etc/udev/rules.d/pci_pm.rules
+cat /sys/class/net/wlan0/power/autosuspend_delay_ms
+cat /sys/class/net/wlan0/power/runtime_status
+cat /sys/class/net/wlan0/power/control
+cat /sys/class/net/wlan0/power/runtime_active_time
+cat /sys/class/net/wlan0/speed
+top
+sensors
+sudo tlp-stat -p
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+sudo systemctl enable tlp
+sudo tlp-stat -p
+sudo tlp-stat -g
+cat /proc/cmdline
+sudo nano /etc/modprobe.d/i195.conf
+sudo rm /etc/modprobe.d/i195.conf
+cat /proc/cmdline
+modinfo i915 | grep psr
+modinfo i915 | grep fbc
+rpm-ostree kargs --editor
+sudo nano /etc/modprobe.d/i915.conf
+systemctl reboot
+sudo tlp-stat -g
+sudo nano /etc/modprobe.d/i915.conf
+sudo tlp-stat -g
+sudo nano /etc/modprobe.d/i915.conf
+rpm-ostree kargs --editor
+systemctl reboot
+sudo tlp-stat -g
+sudo dmesg | grep -i aspm
+sudo dmesg | grep -i i915
+sensors
+sudo systemctl disable tlp
+cd claw-engine/
+cp ../Downloads/test.sb3 .
+cargo run
+cp ../Downloads/Project.sb3 test.sb3
+cargo run
+cd claw-engine/
+cargo run
+nvim src/blocks.rs
+cargo run
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+sudo systemctl enable tlp
+rpm-ostree kargs --editor
+cargo run
+cp ../Downloads/Project(1).sb3 test.sb3
+cargo run
+cp ../Downloads/Project(2).sb3 test.sb3
+cargo run
+cp ../Downloads/Project(3).sb3 test.sb3
+cargo run
+nvim src/project.rs
+nvim src/blocks.rs
+cargo run
+nvim src/blocks.rs
+cd claw-engine/
+nvim src/blocks.rs
+cargo run
+nvim src/project.rs
+ls src/project.rs
+nvim src/project.rs
+git reset src/project.rs
+nvim src/project.rs
+git reset --hard src/project.rs
+git restore src/project.rs
+nvim src/project.rs
+cargo run
+nvim src/project.rs
+cargo run
+nvim src/project.rs
+cargo run
+nvim src/project.rs
+cargo run
+nvim src/project.rs
+cargo run
+cd claw-engine/
+cargo run
+alsamixer
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+sudo systemctl enable tlp
+sudo nano /etc/tlp.conf
+cd claw-engine/
+sensors
+top
+sensors
+systemctl status systemd-journald
+ls /var/log/journal/
+systemctl status systemd-journald
+sensors
+sudo mount / -o remount,noautodefrag,noatime,nodiratime
+sensors
+sudo dmesg
+cd claw-engine/
+cargo run
+sensors
+cargo run
+;
+cargo run
+cd claw-engine/
+cargo run
+nvim src/blocks.rs
+cargo run
+cp ../Downloads/Project(4).sb3 test.sb3
+cargo run
+cp ../Downloads/Project(6).sb3 test.sb3
+cargo run
+nvim src/project.rs
+cd claw-engine/
+cargo run
+nvim src/blocks.rs
+cargo run
+nvim src/blocks.rs
+cargo run
+nvim src/project.rs
+nvim src/blocks.rs
+cargo run
+nvim src/project.rs
+modinfo i915
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+rpm-ostree kargs --editor
+systemctl reboot
+systemctl status auto-cpufreq
+auto-cpufreq --monitor
+sudo auto-cpufreq --install
+sudo auto-cpufreq --monitor
+sudo auto-cpufreq -h
+sudo auto-cpufreq --help
+sudo auto-cpufreq --stats
+sudo nano /etc/tlp.conf
+sudo systemctl stop auto-cpufreq
+sudo systemctl start tlp
+sensors
+sudo systemctl status auto-cpufreq
+sudo systemctl disable auto-cpufreq
+sudo systemctl enable tlp
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+sensors
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+sensors
+cd claw-engine/
+nvim src/project.rs
+cargo run
+nvim src/project.rs
+cargo run
+cd claw-engine/
+cargo run
+cd Downloads/AmbientLightFix_20220714/
+ls
+cd Downloads/AmbientLightFix_20220714/
+ls
+sudo cp ambientLightFix_intel /usr/bin
+sudo ./ambientLightFix_intel
+ls
+sudo bash ./ambientLightFix_intel
+cp ../Downloads/Project(7).sb3 test.sb3
+cargo run
+cp `../Downloads/[PEN] The Fourth Dimension (4D Hypercube Animation).sb3` test.sb3
+cargo run
+nvim src/project.rs
+nvim src/blocks.rs
+git add .
+git commit
+git push
+cargo run
+nvim src/blocks.rs
+cargo run
+nvim src/project.rs
+cargo run
+nvim src/blocks.rs
+cargo run
+nvim src/project.rs
+cargo run
+nvim src/blocks.rs
+nvim src/project.rs
+nvim src/typeinference.rs
+cargo run
+nvim src/project.rs
+cd claw-engine/
+nvim src/project.rs
+cd claw-engine/
+cargo run
+WAYLAND_DISPLAY= Downloads/xournalpp-1.1.3+dev-nightly.20230321-x86_64.AppImage
+cargo run
+git add .
+git commit
+git add .
+cargo run
+cargo run | head
+cargo run | less
+cargo run | head -n 100
+cargo run | head -n 1000
+cd Documents/blog/
+ls
+git pull
+git diff
+nvim build.sh
+nvim header.html
+nvim header-post.html
+git add .
+git commit
+git push
+nvim header.html
+nvim header-post.html
+amfora
+nvim style.css
+nvim header-post.html
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+nvim header.html
+nvim style.css
+nvim header.html
+bash build.sh
+nvim header.html
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+git add .
+git commit
+git push
+nvim header.html
+nvim footer.html
+nvim footer-post.html
+nvim header.html
+nvim header-post.html
+bash build.sh
+nvim header.html
+nvim header-post.html
+nvim build.sh
+nvim header-post.html
+bash build.sh
+nvim build.sh
+bash build.sh
+nvim build.sh
+bash build.sh
+nvim build.sh
+bash build.sh
+nvim build.sh
+bash build.sh
+nvim build.sh
+bash build.sh
+nvim build.sh
+bash build.sh
+nvim build.sh
+bash build.sh
+nvim header.html
+nvim header-post.html
+bash build.sh
+git add .
+nvim header-post.html
+git commit
+git push
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+nvim style.css
+bash build.sh
+git add .
+git commit
+git push
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+cd linux-6.2.7/
+toolbox enter
+cd
+cat /sys/bus/cpu/devices/cpu1/online
+cat /sys/bus/cpu/devices/cpu1/thermal_throttle/core_throttle_count
+cat /sys/bus/cpu/devices/cpu*/thermal_throttle/core_throttle_count
+cd /
+cat /sys/bus/cpu/devices/cpu*/thermal_throttle/core_throttle_count
+cat /sys/bus/cpu/devices/cpu*/thermal_throttle/online
+cat /sys/bus/cpu/devices/cpu*/online
+sudo sh -c 'echo 0 > /sys/bus/cpu/devices/cpu0/online'
+sudo sh -c 'echo 0 > /sys/bus/cpu/devices/cpu1/online'
+sudo sh -c 'echo 0 > /sys/bus/cpu/devices/cpu2/online'
+sudo sh -c 'echo 0 > /sys/bus/cpu/devices/cpu3/online'
+sudo dmesg
+sensors
+sudo dmesg
+sensors
+cat /sys/class/power_supply/BAT1/power_now
+cat /sys/class/power_supply/BAT1/voltage_now
+cat /sys/class/power_supply/BAT1/power_now
+cat /sys/class/power_supply/BAT1/voltage_now
+cat /sys/class/power_supply/BAT1/power_now
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+sensors
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+sensors
+top
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+cd Documents/blog/
+ls `1`
+rm 1
+git add .
+git diff
+ls
+nvim gmi/blog/test.gmi
+top
+sudo nano /etc/tlp.conf
+rpm-ostree install corefreq
+rpm-ostree upgrade
+toolbox enter
+rpm-ostree override replace rpmbuild/RPMS/x86_64/kernel-6.2.7-2.x86_64.rpm
+cd claw-engine/
+git push
+cd
+flatpak remotes
+flatpak remote-delete fedora
+flatpak remote-delete flathub-beta
+flatpak update
+sensors
+top
+sensors
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+sensors
+git clone https://github.com/sinofp/aur-action
+cd aur-action/
+git init
+git log
+git init --new
+rm .git/ -r
+git init
+git log
+ls
+nvim .github/workflows/build.yml
+nvim build.sh
+nvim custom.sh
+nvim .github/workflows/build.yml
+nvim prepare.sh
+nvim .github/workflows/build.yml
+nvim prepare.sh
+nvim build.sh
+nvim prepare.sh
+rm custom.sh transfer.sh
+nvim .github/workflows/build.yml
+nvim prepare.sh
+nvim .github/workflows/build.yml
+nvim build.sh
+nvim .github/workflows/build.yml
+nvim build.sh
+cp ../linux-6.2.7/.config config
+cp ../linux-6.2.7/.whitelist .
+nvim build.sh
+mv config .config
+nvim build.sh
+nvim prepare.sh
+nvim build.sh
+git add .
+git commit
+rm custom/ -r
+git commit
+git add .
+git commit
+nvim ~/.ssh/config
+git remote add origin git@github.com:peter-marshall5/linux-surface-fedora-ci.git
+git branch -M main
+git push -u origin main
+git remote remove origin
+nvim ~/.ssh/config
+git remote add origin git@ssh.github.com:peter-marshall5/linux-surface-fedora-ci.git
+git push -u origin main
+nvim prepare.sh
+rm makepkg.conf
+nvim prepare.sh
+nvim .github/workflows/build.yml
+nvim build.sh
+git add .
+git commit
+git push
+nvim prepare.sh
+git add .
+git commit
+git push
+nvim prepare.sh
+git add .
+git commit
+git push
+nvim prepare.sh
+git add .
+git commit
+git push
+nvim prepare.sh
+git add .
+git commit
+git push
+nvim prepare.sh
+git add .
+git commit
+git push
+nvim prepare.sh
+nvim build.sh
+git add .
+git commit
+git push
+nvim build.sh
+git add .
+git commit
+nvim build.sh
+git add .
+git commit
+git push
+nvim build.sh
+git add .
+git commit
+git push
+nvim build.sh
+nvim prepare.sh
+git add .
+git commit
+git push
+nvim prepare.sh
+git add .
+git commit
+git push
+nvim prepare.sh
+git add .
+git commit
+git push
+nvim prepare.sh
+git add .
+git commit
+git push
+nvim prepare.sh
+git add .
+git commit
+git push
+nvim prepare.sh
+nvim build.sh
+git add .
+git commit
+nvim build.sh
+nvim .github/workflows/build.yml
+git add .
+git commit
+nvim prepare.sh
+git add .
+git commit
+git push
+nvim prepare.sh
+git add .
+git commit
+git push
+cd aur-action/
+ls
+ls .config
+nvim .github/workflows/build.yml
+nvim build.sh
+git add .
+git commit
+git push
+cd aur-action/
+nvim .github/workflows/build.yml
+git add .
+git commit
+git push
+toolbox enter
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+sudo tlp ac
+sudo tlp bat
+sudo tlp start
+sudo tlp ac
+sudo tlp start
+sudo rpm-ostree install /tmp/rpkg/iptsd-12-mv14w7jg/x86_64/iptsd-1.1.1-1.fc37.x86_64.rpm
+sudo rpm-ostree replace /tmp/rpkg/iptsd-12-mv14w7jg/x86_64/iptsd-1.1.1-1.fc37.x86_64.rpm
+sudo rpm-ostree uninstall iptsd --install /tmp/rpkg/iptsd-12-mv14w7jg/x86_64/iptsd-1.1.1-1.fc37.x86_64.rpm
+sudo rpm-ostree uninstall iptsd
+sudo rpm-ostree install /tmp/rpkg/iptsd-12-mv14w7jg/x86_64/iptsd-1.1.1-1.fc37.x86_64.rpm
+sudo rpm-ostree install /tmp/rpkg/iptsd-13-7qf1q6bc/x86_64/iptsd-1.1.1-2.x86_64.rpm
+sudo rpm-ostree uninstall iptsd --install /tmp/rpkg/iptsd-13-7qf1q6bc/x86_64/iptsd-1.1.1-2.x86_64.rpm
+sudo rpm-ostree install /tmp/rpkg/iptsd-13-7qf1q6bc/x86_64/iptsd-1.1.1-2.x86_64.rpm
+sudo rpm-ostree apply-live
+sudo rpm-ostree apply-live --allow-override
+sudo rpm-ostree apply-live --allow-replacement
+bas
+cd claw-engine/
+cargo run | head -n 1000
+cd claw-engine/
+cat `~/Downloads/[PEN] The Fourth Dimension (4D Hypercube Animation)/project.json`
+cat '~/Downloads/[PEN] The Fourth Dimension (4D Hypercube Animation)/project.json'
+cat ~/Downloads/'[PEN] The Fourth Dimension (4D Hypercube Animation)/project.json'
+cat ~/Downloads/'[PEN] The Fourth Dimension (4D Hypercube Animation)'/project.json
+cat `Downloads/[PEN] The Fourth Dimension (4D Hypercube Animation)/project.json`
+cargo run | head -n 1000
+cargo run
+cd claw-engine/
+cargo run
+cd claw-engine/
+cargo run
+rpm-ostree override replace ./*.rpm \
+bash
+systemctl reboot
+top
+cat /sys/class/thermal/*/name
+cat /sys/class/thermal/*/type
+cat /sys/class/thermal/cooling_device*/type
+cat /sys/class/thermal/cooling_device6/type
+cat /sys/class/thermal/cooling_device5/type
+cat /sys/class/thermal/cooling_device0/type
+cat /sys/class/thermal/cooling_device1/type
+cat /sys/class/thermal/cooling_device12/type
+cat /sys/class/thermal/cooling_device13/type
+cat /sys/class/thermal/cooling_device13/cur_state
+cat /sys/class/thermal/cooling_device13/max_state
+cat /sys/class/thermal/cooling_device13/cur_state
+sudo sh -c 'echo 50 > /sys/class/thermal/cooling_device13/cur_state'
+top
+sudo sh -c 'echo 0 > /sys/class/thermal/cooling_device13/cur_state'
+top
+sudo sh -c 'echo 50 > /sys/class/thermal/cooling_device13/cur_state'
+top
+sensors
+sudo sh -c 'echo 20 > /sys/class/thermal/cooling_device13/cur_state'
+sensors
+top
+sudo nano 
+sudo systemctl disable tlp
+sudo systemctl enable auto-cpufreq
+sudo systemctl stop tlp
+sudo systemctl start auto-cpufreq
+systemctl status auto-cpufreq
+sudo sh -c 'echo 50 > /sys/class/thermal/cooling_device13/cur_state'
+sensors
+sudo sh -c 'echo 20 > /sys/class/thermal/cooling_device13/cur_state'
+top
+sudo dmesg | grep i915
+modinfo i915
+modinfo i915 | grep dc
+rpm-ostree kargs --editor
+sudo dmesg | grep mitig
+cat /proc/config.gz
+sudo modprobe configs
+sudo modprobe config
+sudo modprobe configs
+cat /proc/config.gz
+sudo dmesg | grep mitig
+nproc
+lscpu --all
+lscpu --all --extended
+sensors
+top
+sudo apk add iptsd
+rpm-ostree install iptsd
+rpm-ostree install iptsd-1.1.1-2
+rpm-ostree install iptsd-1.1.1-1
+rpm-ostree install --help
+rpm-ostree install Downloads/iptsd-1.1.1-1.fc37.x86_64.rpm --allow-inactive
+rpm-ostree install Downloads/iptsd-1.1.1-1.fc37.x86_64.rpm
+rpm-ostree remove iptsd --install Downloads/iptsd-1.1.1-1.fc37.x86_64.rpm
+flatpak update
+rpm-ostree upgrade
+systemctl reboot
+uname -r
+ls Documents/
+git clone git@github.com:peter-marshall5/linux-surface-fedora-ci.git
+cd linux-surface-fedora-ci/
+ls
+nvim build.sh
+git add .
+git commit
+git push
+nvim 
+nvim build.sh
+git add .
+git commit
+git p
+git push
+rpm-ostree upgrade
+flatpak update
+flatpak install audacity
+rpm-ostree install iptsd-1.1.1-1
+rpm-ostree install iptsd
+git clone https://github.com/PeterCxy/evdev-right-click-emulation
+rpm-ostree upgrade
+toolbox enter
+cd evdev-right-click-emulation/
+out/evdev-rce
+sudo adduser peter input
+sudo out/evdev-rce
+cd out/
+sudo LONG_CLICK_INTERVAL=500 LONG_CLICK_FUZZ=50 evdev-rce
+sudo env LONG_CLICK_INTERVAL=500 LONG_CLICK_FUZZ=50 evdev-rce
+rpm-ostree
+rpm-ostree reset -h
+rpm-ostree reset
+ssh ssh.petms.ga
+sudo ping ssh.petms.ga
+dig petms.ga
+dig ssh.petms.ga
+ssh 174.112.159.192
+curl
+curl api.ipify.org
+ls
+dnf search dejavu
+flatpak-spawn 
+flatpak-spawn ls
+cat /usr/bin/podman
+flatpak-spawn --host ls
+flatpak-spawn --host rpm-ostree install dejavu-fonts-all
+flatpak-spawn --host rpm-ostree install font-awesome
+cd claw-engine/
+nvim
+ls
+nvim src/project.rs
+cargo run
+cd claw-engine/
+cargo run
+nvim src/project.rs
+cargo run
+cat src/blocks.rs
+cargo run
+cat src/blocks.rs
+cargo run
+cd claw-engine/
+cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE=1 ./target/debug/claw
+cargo run
+top
+cargo run
+flatpak-spawn --host rpm-ostree upgrade
+flatpak-spawn --host rpm-ostree install dejavu-fonts-all
+flatpak-spawn --host rpm-ostree install font-awesome
+flatpak-spawn --host flatpak updat4
+flatpak-spawn --host flatpak update
+flatpak-spawn --host rpm-ostree install font-awesome
+cargo run
+flatpak-spawn --host rpm-ostree install awesome-fonts
+dnf search awesome
+flatpak-spawn --host rpm-ostree install fontawesome-fonts
+cat src/project.rs | head
+cat src/project.rs | head -n 100
+cat src/project.rs | head -n 50
+cat src/project.rs | head -n 100
+cargo run
+git add .
+git commit
+git push
+cargo run
+cat src/project.rs | head -n 100
+cargo run
+cat src/project.rs | head -n 100
+cat src/blocks.rs
+cat src/blocks.rs | grep if
+cat src/blocks.rs | grep while
+cat src/blocks.rs | grep loop
+cat src/project.rs | head -n 100
+cargo run
+clear
+cargo run
+cd claw-engine/
+cargo run
+cat src/project.rs | head -n 100
+cargo run
+rustc --explain E0621
+cargo run
+cat src/project.rs | head -n 100
+cat src/project.rs | grep List
+cat src/project.rs | grep List -A 10 -B 10
+cargo run
+cat src/project.rs | head -n 100
+cargo run
+cat src/blocks.rs | grep var
+cargo run
+git add .
+git commit
+git push
+cargo run
+cat src/blocks.rs | grep list
+cargo run
+cat src/blocks.rs | grep call
+cat src/project.rs | head -n 100
+cargo run
+cargo run | save log.txt
+nano log.txt
+rm log.txt
+cargo run | save log.txt
+nano log.txt
+rm log.txt
+git add .
+git commit
+rm \
+git add .
+git commit
+cargo run
+git push
+cat src/project.rs | head -n 100
+cargo run
+cargo run | save log.txt
+nano log.txt
+cargo run
+cargo run | save log.txt
+rm log.txt
+cargo run | save log.txt
+nano log.txt
+cargo run
+rm log.txt
+cargo run | save log.txt
+nano log.txt
+cargo run
+rm log.txt
+cargo run | save log.txt
+nano log.txt
+rm log.txt
+cargo run | save log.txt
+nano log.txt
+rm log.txt
+cargo run
+rm log.txt
+cargo run | save log.txt
+nano log.txt
+rm log.txt
+cargo run
+cargo run | save log.txt
+nano log.txt
+rm log.txt
+cargo run
+cargo run | save log.txt
+nano log.txt
+nvim log.txt
+rm log.txt
+cargo run
+cargo run | save log.txt
+nano log.txt
+rm log.txt
+git add .
+git commit
+git push
+nvim src/project.rs
+cargo run | save log.txt
+nvim log.txt
+rm log.txt
+systemctl status wpa_supplicant
+systemctl status iwd
+flatpak-spawn --host sudo nano /etc/NetworkManager/conf.d/*
+flatpak-spawn --host bash
+cd claw-engine/
+nvim src/project.rs
+cargo run | save log.txt
+nvim log.txt
+rm log.txt
+nvim src/project.rs
+cargo run
+nvim src/blocks.rs
+nvim src/project.rs
+cd claw-engine/
+cargo run
+top
+sensors
+flatpak-spawn --host top
+flatpak-spawn --host TERM=xterm top
+flatpak-spawn --host env TERM=xterm top
+sensors
+cd claw-engine/
+cargo run
+cd claw-engine/
+cargo run
+cargo run | save log.txt
+nvim log.txt
+rm log.txt
+cat src/project.rs | head -n 100
+cd claw-engine/
+nvim src/blocks.rs
+ssh
+ssh ssh.petms.ga
+nvim .ssh/config
+ssh gmi.petms.ga
+ssh ssh.petms.ga -P 44
+ping petms.ga
+ssh 2606:4700:130:436c:6f75:6466:6c61:7265
+ping ssh.petms.ga
+flatpak-spawn --host rpm-ostree upgrade
+bash
+cd ipu6-drivers/
+ls
+make
+sudo dnf install kernel-surface
+sudo dnf install kernel-devel-surface
+sudo dnf install kernel-surface-devel
+sudo -E gst-launch-1.0 icamerasrc device-name=tpg_ipu6 ! video/x-raw,format=YUY2,width=1280,height=720 ! videoconvert ! ximagesink
+sudo dnf update
+sudo -E gst-launch-1.0 icamerasrc device-name=tpg_ipu6 ! video/x-raw,format=YUY2,width=1280,height=720 ! videoconvert ! ximagesink
+make
+ git clone https://github.com/intel/ivsc-driver.git
+ cp -r ivsc-driver/backport-include ivsc-driver/drivers ivsc-driver/include .
+^cp -r ivsc-driver/backport-include ivsc-driver/drivers ivsc-driver/include .
+ rm -rf ivsc-driver
+make
+make -j12
+sudo insmod module/surface_gpe.ko
+ls
+sudo insmod surface_gpe.ko
+ls *.ko
+sudo insmod intel_vsc.ko
+sudo dmesg
+sudo insmod intel_vsc.ko
+flatpak-spawn --host sudo insmod intel_vsc.ko
+flatpak-spawn --host sudo -S insmod intel_vsc.ko
+sudo dmesg
+sudo dkms add .
+sudo dnf install dkms
+sudo dkms add .
+ sudo dkms autoinstall ipu6-drivers/0.0.0
+/lib/modules/6.2.8-1.surface.fc37.x86_64/build/scripts/sign-file sha512 ~/keys/MOK.key ~/keys/MOK.crt drivers/media/pci/intel/Kconfig
+^find -name "*.ko"
+^find -name "*.ko" -exec /lib/modules/6.2.8-1.surface.fc37.x86_64/build/scripts/sign-file sha512 ~/keys/MOK.key ~/keys/MOK.crt {} ";"
+flatpak-spawn --host sudo -S insmod intel_vsc.ko
+sudo dmesg
+flatpak-spawn --host sudo -S find -name "*.ko" -exec insmod {} ";"
+sudo dmesg
+ls /lib/firmware/
+ls /lib/firmware/intel/
+ls /lib/firmware/intel/ipu6ep_fw.bin
+cp /usr/lib/firmware/intel/ipu6ep_fw.bin .
+flatpak-spawn --host env TERM=xterm bash
+sudo reboot
+systemctl reboot
+flatpak-spawn --host env TERM=xterm bash
+cd ipu6-drivers/
+flatpak-spawn --host sudo -S find -name "*.ko" -exec insmod {} ";"
+sudo dmesg
+sudo -E gst-launch-1.0 icamerasrc device-name=tpg_ipu6 ! video/x-raw,format=YUY2,width=1280,height=720 ! videoconvert ! ximagesink
+cd
+git clone https://github.com/intel/icamerasrc/tree/icamerasrc_slim_api --depth 0
+git clone https://github.com/intel/icamerasrc/tree/icamerasrc_slim_api --depth 1
+git clone https://github.com/intel/icamerasrc -b camerasrc_slim_api --depth 1
+wget https://github.com/intel/icamerasrc/archive/refs/tags/v1.0.0-mtl-alpha.tar.gz -O - | tar xtf -
+wget https://github.com/intel/icamerasrc/archive/refs/tags/v1.0.0-mtl-alpha.tar.gz -O - | tar tvf -
+wget https://github.com/intel/icamerasrc/archive/refs/tags/v1.0.0-mtl-alpha.tar.gz -O - | tar tzvf -
+wget https://github.com/intel/icamerasrc/archive/refs/tags/v1.0.0-mtl-alpha.tar.gz -O - | tar xzvf -
+cd icamerasrc-1.0.0-mtl-alpha/
+ls
+make
+./autogen.sh
+make -j12
+make
+cd
+rm icamerasrc-1.0.0-mtl-alpha/ -r
+git clone https://github.com/intel/icamerasrc -b camerasrc_slim_api
+git clone https://github.com/intel/icamerasrc -b icamerasrc_slim_api
+cd icamerasrc/
+bash
+make rpm
+bash
+sudo -E gst-launch-1.0 icamerasrc device-name=tpg_ipu6 ! video/x-raw,format=YUY2,width=1280,height=720 ! videoconvert ! ximagesink
+let-env GST_PLUGIN_PATH="/usr/lib/gstreamer-1.0/"
+let-env GST_PLUGIN_PATH = "/usr/lib/gstreamer-1.0/"
+sudo -E gst-launch-1.0 icamerasrc device-name=tpg_ipu6 ! video/x-raw,format=YUY2,width=1280,height=720 ! videoconvert ! ximagesink
+git clone https://github.com/intel/ipu6-camera-hal --depth 1
+cd ipu6-camera-hal/
+ls
+bash
+sudo -E gst-launch-1.0 icamerasrc device-name=tpg_ipu6 ! video/x-raw,format=YUY2,width=1280,height=720 ! videoconvert ! ximagesink
+ls
+cd ..
+sudo -E gst-launch-1.0 icamerasrc device-name=tpg_ipu6 ! video/x-raw,format=YUY2,width=1280,height=720 ! videoconvert ! ximagesink
+let-env GST_PLUGIN_PATH = "/usr/lib/gstreamer-1.0/"
+sudo -E gst-launch-1.0 icamerasrc device-name=tpg_ipu6 ! video/x-raw,format=YUY2,width=1280,height=720 ! videoconvert ! ximagesink
+sudo -E env GST_PLUGIN_PATH=/usr/lib/gstreamer-1.0/ gst-launch-1.0 icamerasrc device-name=tpg_ipu6 ! video/x-raw,format=YUY2,width=1280,height=720 ! videoconvert ! ximagesink
+sudo make install
+sudo -E env GST_PLUGIN_PATH=/usr/lib/gstreamer-1.0/ gst-launch-1.0 icamerasrc device-name=tpg_ipu6 ! video/x-raw,format=YUY2,width=1280,height=720 ! videoconvert ! ximagesink
+sudo -E gst-launch-1.0 icamerasrc buffer-count=7 ! video/x-raw,format=NV12,width=1280,height=720 ! videoconvert ! ximagesink
+sudo dmesg
+ls /dev
+sudo -E gst-launch-1.0 icamerasrc buffer-count=7 ! video/x-raw,format=NV12,width=1280,height=720 ! videoconvert ! ximagesink
+sudo dmesg
+flatpak-spawn --host sudo -S find -name "*.ko" -exec insmod {} ";"
+sudo dmesg
+sudo -E gst-launch-1.0 icamerasrc buffer-count=7 ! video/x-raw,format=NV12,width=1280,height=720 ! videoconvert ! ximagesink
+cd
+sudo -E gst-launch-1.0 icamerasrc buffer-count=7 ! video/x-raw,format=NV12,width=1280,height=720 ! videoconvert ! ximagesink
+rm linux-6.2.* -r
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.8.tar.xz -O - | tar xJvf -
+cd linux-6.2.8/
+cat ../linux-surface/
+cat ../linux-surface/patches/6.2/*
+cd
+cd linux-surface
+git pull
+cat patches/6.2/0012-cameras.patch
+cat patches/6.2/0012-cameras.patch 
+cat patches/6.2/0012-cameras.patch | grep -i ipu6
+cd linux-6.2.8/
+cat ../linux-surface/patches/6.2/0012-cameras.patch | grep -i ipu6
+cat ../linux-surface/patches/6.2/0012-cameras.patch | patch -p1
+cat ../linux-surface/patches/6.2/* | patch -p1
+cd ..
+rm linux-6* -r
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.8.tar.xz -O - | tar xJvf -
+cd linux-6.2.8/
+cat ../linux-surface/patches/6.2/* | patch -p1
+make LLVM=1 nconfig
+wget https://github.com/peter-marshall5/linux-surface-fedora-ci/raw/main/.config
+make LLVM=1 nconfig
+sudo dmesg
+sudo dmesg | grep Unknown
+make LLVM=1 KCFLAGS="-mtune=native" -j12 binrpm-pkg
+make LLVM=1 nconfig
+make LLVM=1 KCFLAGS="-mtune=native" -j12 binrpm-pkg
+uname -r
+cd linux-6.2.8/
+cp ../keys/ .
+cp ../keys/ . -r
+cat ../linux-surface/pkg/fedora/kernel-surface/0001-Add-secureboot-pre-signing-to-the-kernel.patch | patch -p1
+make LLVM=1 KCFLAGS="-mtune=native" -j12 binrpm-pkg
+cd ipu6-drivers/
+uname -r
+sudo dnf install ~/rpmbuild/RPMS/x86_64/kernel-6.2.8-1.x86_64.rpm
+sudo dnf install ~/rpmbuild/RPMS/x86_64/kernel-headers-6.2.8-1.x86_64.rpm
+make
+ls /lib/modules/6.2.8/kernel/
+ls /lib/modules/6.2.8/build
+sudo mkdir /lib/modules/6.2.8/build
+sudo ln -s ~/linux-6.2.8/ /lib/modules/6.2.8/build
+make LLVM=1 KCFLAGS="-mtune=native" -j12
+make -C /lib/modules/6.2.8/build M=/var/home/peter/ipu6-drivers modules
+make LLVM=1 KCFLAGS="-mtune=native" -C ~/linux-6.2.8/ M=/var/home/peter/ipu6-drivers modules
+^find -name "*.ko" -exec /lib/modules/6.2.8-1.surface.fc37.x86_64/build/scripts/sign-file sha512 ~/keys/MOK.key ~/keys/MOK.crt {} ";"
+flatpak-spawn --host env TERM=xterm bash
+flatpak-spawn --host sudo -S find -name "*.ko" -exec insmod {} ";"
+sudo dmesg | grep Unknown
+cd linux-6.2.8/
+flatpak-spawn --host env TERM=xterm bash
+flatpak-spawn --host sudo -S find -name "*.ko" -exec insmod {} ";"
+flatpak-spawn --host env TERM=xterm bash
+flatpak-spawn --host sudo -S find -name "*.ko" -exec insmod {} ";"
+sudo dmesg | grep Unknown
+sudo dmesg
+sudo -E gst-launch-1.0 icamerasrc buffer-count=7 ! video/x-raw,format=NV12,width=1280,height=720 ! videoconvert ! ximagesink
+sudo rmmod ov01a10
+flatpak-spawn --host env TERM=xterm bash
+flatpak-spawn --host sudo -S find -name "*.ko" -exec insmod {} ";"
+sudo dmesg
+sudo -E gst-launch-1.0 icamerasrc buffer-count=7 ! video/x-raw,format=NV12,width=1280,height=720 ! videoconvert ! ximagesink
+ls /dev/v4l-subdev1
+cat /dev/v4l-subdev1
+ls -l /dev/v4l-subdev1
+sudo cat /dev/v4l-subdev1
+ls /dev/v4l-subdev1
+ls -l /dev/v4l-subdev1
+sudo -E gst-launch-1.0 icamerasrc buffer-count=7 ! video/x-raw,format=NV12,width=1280,height=720 ! videoconvert ! ximagesink
+sudo cat /dev/v4l-subdev1
+cat /dev/v4l-subdev1
+gst-launch-1.0 icamerasrc buffer-count=7 ! video/x-raw,format=NV12,width=1280,height=720 ! videoconvert ! ximagesink
+sudo -E gst-launch-1.0 icamerasrc buffer-count=7 ! video/x-raw,format=NV12,width=1280,height=720 ! videoconvert ! ximagesink
+gst-launch-1.0 icamerasrc buffer-count=7 ! video/x-raw,format=NV12,width=1280,height=720 ! videoconvert ! ximagesink
+make LLVM=1 KCFLAGS="-mtune=native" -j12 nconfig
+gst-launch-1.0 icamerasrc buffer-count=7 ! video/x-raw,format=NV12,width=1280,height=720 ! videoconvert ! ximagesink
+sudo dmesg
+gst-launch-1.0 icamerasrc buffer-count=7 ! video/x-raw,format=NV12,width=1280,height=720 ! videoconvert ! ximagesink
+cd linux-6.2.8/
+cat ../ipu6-drivers/patch/IOMMU-passthrough-for-intel-ipu.diff | patch -p1
+nvim drivers/iommu/intel/iommu.c.rej
+nvim drivers/iommu/intel/iommu.c
+nvim drivers/iommu/intel/iommu.c.rej
+nvim drivers/iommu/intel/iommu.c
+nvim drivers/iommu/intel/iommu.c.rej
+nvim drivers/iommu/intel/iommu.c
+lspci
+flatpak-spawn --host env TERM=xterm bash
+sudo rpm-ostree install qemu-system-x86_64
+flatpak-spawn --host rpm-ostree install qemu-system-x86_64
+flatpak-spawn --host rpm-ostree install qemu
+flatpak-spawn --host rpm-ostree apply-live
+flatpak-spawn --host sudo -S rpm-ostree apply-live
+sudo dnf install qem
+sudo dnf install qemu
+qemu-system-x86_64 
+qemu-system-x86_64 --enable-kvm
+qemu-system-x86_64 
+qemu-system-x86_64 --enable-kvm /dev/nvme0n1
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1
+sudo chmod a+rw /dev/nvme0n1
+flatpak-spawn --host env TERM=xterm bash
+ls
+mkdir Documents/impulses
+cp /mnt/plain/*.wav Documents/impulses/
+pkill easyeffects
+easyeffects --help
+easyeffects --gapplication-service
+rm .config/easyeffects/ -r
+easyeffects --gapplication-service
+config env
+sensors
+sudo systemctl start waydroid-container
+waydroid show-full-ui
+waydroid init
+sudo waydroid init
+clear
+waydroid show-full-ui
+top
+squeekboard 
+squeekboard-entry 
+squeekboard-test-layout 
+squeekboard-test-layout 1
+squeekboard -h
+squeekboard
+hyprland
+sudo ls /boot/efi/EFI
+top
+lsmod | grep efi
+sudo ls /boot/efi/EFI
+sudo ls /boot/efi/EFI/Linux
+sudo cp /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi /boot/efi/EFI/Linux/working.efi 
+sudo ls -sh /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi
+sudo mv /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi /boot/efi/EFI/Linux/working.efi 
+sudo nano /etc/kernel/cmdline
+sudo nano /etc/mkinitcpio.conf
+zstd
+zstd -h
+sudo nano /etc/mkinitcpio.conf
+zsh
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface  
+grep . -r /sys/firmware/acpi/interrupts | grep -v "  0"
+grep . -r /sys/firmware/acpi/interrupts
+grep . -r /sys/firmware/acpi/interrupts | grep -v "  0"
+sudo rm /boot/efi/EFI/Linux/working.efi
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface  
+ls
+sudo dmesg
+ls
+sudo dmesg | grep mask
+sudo dmesg
+cat /proc/cmdline
+grep . -r /sys/firmware/acpi/interrupts | grep -v "  0"
+grep . -r /sys/firmware/acpi/interrupts | grep -v "  0" | cut -d':' -f1
+grep . -r /sys/firmware/acpi/interrupts | grep -v "  0" | cut -d: -f1
+grep . -r /sys/firmware/acpi/interrupts | grep -v "  0" | cut -d: -f1 | xargs
+sudo sh -c 'echo mask > /sys/firmware/acpi/interrupts/gpe_all'
+sudo sh -c 'echo mask > /sys/firmware/acpi/interrupts/gpe51'
+sudo sh -c 'echo 0 > /sys/firmware/acpi/interrupts/gpe51'
+sudo sh -c 'echo disable > /sys/firmware/acpi/interrupts/gpe51'
+top
+grep . -r /sys/firmware/acpi/interrupts | grep -v "  0" | cut -d: -f1 | xargs
+grep . -r /sys/firmware/acpi/interrupts | grep -v "  0"
+sudo sh -c 'echo "disable" > /sys/firmware/acpi/interrupts/gpe51'
+sudo sh -c 'echo -n "disable" > /sys/firmware/acpi/interrupts/gpe51'
+sudo sh -c 'echo -ne "disable" > /sys/firmware/acpi/interrupts/gpe51'
+sudo sh -c 'echo -ne 0 > /sys/firmware/acpi/interrupts/gpe51'
+sudo sh -c 'echo -ne mask > /sys/firmware/acpi/interrupts/gpe51'
+sudo -s
+sudo nano /etc/kernel/cmdline
+sudo -s
+sudo strings /sys/firmware/acpi/tables/DSDT
+sudo strings /sys/firmware/acpi/tables/DSDT | grep Windows
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface  
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface  
+sudo nano /etc/kernel/cmdline
+top
+sudo ls -sh /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface  
+sync
+sudo poweroff
+sudo dmesg
+grep . -r /sys/firmware/acpi/interrupts | grep -v "  0"
+grep . -r /sys/firmware/acpi/interrupts
+sudo dmesg
+grep . -r /sys/firmware/acpi/interrupts
+sudo nano /etc/mkinitcpio.conf
+sudo strings /sys/firmware/acpi/tables/DSDT | grep Windows
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface  
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface  
+sudo reboot
+sudo dmesg
+clear
+sudo dmesg
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface  
+sudo ls -sh /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi
+sudo dmesg
+sudo dmesg | grep -i acpi
+sudo dmesg | grep -i error
+sudo nano /etc/kernel/cmdline
+zsh
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface  
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface  
+sudo reboot
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface  
+cat /etc/kernel/cmdline
+sudo nano /etc/default/grub
+sudo reboot
+sudo dmesg
+sudo dmesg | grep err
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface  
+sudo reboot
+sudo dmesg
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo reboot
+sudo dmesg
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo dmesg
+sudo dmesg | grep err
+sudo dmesg
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo dmesg
+sudo dmesg | grep err
+sudo dmesg
+sudo nano /etc/kernel/cmdline
+grep . -r /sys/firmware/acpi/interrupts
+grep . -r /sys/firmware/acpi/interrupts | grep 51
+sudo sh -c 'echo -ne mask > /sys/firmware/acpi/interrupts/gpe51'
+sudo nano /etc/kernel/cmdline
+sudo strings /sys/firmware/acpi/tables/DSDT | grep Windows
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo nano /etc/kernel/cmdline
+sudo re
+sudo reboot
+sudo dmesg
+sudo dmesg | grep -i error
+sudo dmesg | grep -i acpi
+sudo dmesg
+sudo nano /etc/kernel/cmdline
+sudo strings /sys/firmware/acpi/tables/DSDT | grep Windows
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo reboot
+sudo modprobe surface-gpe
+git clone https://github.com/linux-surface/surface-gpe
+cd surface-gpe/
+ls
+make
+cd module/
+make
+nano surface_gpe.c
+make
+sudo insmod surface_gpe.ko
+sudo dmesg
+sudo nano /usr/lib/initcpio/hooks/osk-sdl
+sudo nano /usr/lib/initcpio/install/osk-sdl
+sudo cp /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi /boot/efi/EFI/Linux/working.efi 
+sudo mv /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi /boot/efi/EFI/Linux/working.efi 
+sudo nano /usr/lib/initcpio/hooks/osk-sdl
+osk-sdl -h
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo reboot
+sudo ls -sh /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi
+sudo nano /usr/lib/initcpio/install/osk-sdl
+sudo nano /etc/osk.conf
+osk-sdl -h
+osk-sdl -t
+osk-sdl -n a -d a
+sudo nano /etc/osk.conf
+osk-sdl -n a -d a
+sudo nano /etc/osk.conf
+osk-sdl -n a -d a
+sudo nano /etc/mkinitcpio.conf
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo ls -sh /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi
+sudo nano /etc/mkinitcpio.conf
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo ls -sh /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi
+sudo nano /etc/kernel/cmdline
+sudo nano /etc/mkinitcpio.conf
+sudo nano /etc/kernel/cmdline
+sudo nano /etc/mkinitcpio.conf
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo ls -sh /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi
+sudo lsinitcpio /boot/initramfs-linux-surface
+sudo cat /boot/grub/grub.cfg
+sudo rm /boot/initramfs-linux-surface
+sudo mkinitcpio /boot/initramfs-linux-surface.img
+sudo mkinitcpio -g /boot/initramfs-linux-surface.img
+sudo rm /boot/initramfs-linux-surface-fallback.img.tmp
+sync
+sudo lsinitcpio /boot/initramfs-linux-surface.img
+sudo ls -sh /boot/initramfs-linux-surface.img
+sudo ls -sh /boot/vmlinuz-linux-surface
+eww
+cd Documents/
+git clone https://github.com/peter-marshall5/peter-marshall5-dotfiles
+cd peter-marshall5-dotfiles/
+ls
+ls .config/
+cp .config/ ~/ -r
+waybar
+hyprland
+Hyprland
+cp .config/ ~/ -r
+ls ~/.config/hypr/
+cd
+ls ~/.config/hypr/
+Hyprland
+ls ~/.config/hypr/
+cd peter-marshall5-dotfiles/
+cd Documents/peter-marshall5-dotfiles/
+cp .config/ ~/ -r
+rm ~/.config/hypr/hyprland.conf
+Hyprland
+rm ~/.config/hypr/hyprland.conf
+cp .config/ ~/ -r
+rm ~/.config/hypr/hyprland.conf
+cd ..
+git clone https://codeberg.org/petms/hyprland-dots
+cd hyprland-dots/
+cp hypr/ ~/.config/ -r
+Hyprland
+nano ~/.config/hypr/hyprland.conf
+Hyprland
+nano ~/.config/hypr/hyprland.conf
+swaybg 
+swaybg -h
+nano ~/.config/hypr/hyprland.conf
+cp ~/Downloads/windows-11-dark-mode-blue-stock-official-3840x2400-5630.jpg ~/.wallpaper
+config env
+let-env EDITOR = "nvim"
+config env
+ls
+zsh
+sudo systemctl restart sddm
+nvim .config/hypr/hyprland.conf
+sudo pacman -S rofi
+hyprctl 
+hyprctl monitors
+top
+pkill kscreenlocker
+top
+kadmin 
+ksu 
+pkill Hypr
+nvim .config/hypr/hyprland.conf
+nmcli
+nmcli conn up TCIS-NET
+nmcli conn up TCIS-NET --ask
+nmcli conn del TCIS-NET
+nmcli conn up TCIS-NET --ask
+nmcli dev wifi connect TCIS-NET --ask
+nvim .config/waybar/config
+pkill waybar
+hyprctl
+hyprctl activewindow
+hyprctl activewindow -h
+hyprctl activewindow | grep pid
+hyprctl activewindow | grep pid | cut -d':' -f2
+hyprctl activewindow | grep pid | cut -d: -f2
+hyprctl activewindow | grep pid | cut -d' ' -f2
+hyprctl activewindow | grep pid | cut -d  -f2
+hyprctl activewindow | grep pid | cut -d\  -f2
+hyprctl activewindow | grep pid | cut -d: -f2
+waybar
+foot
+waybar
+nvim .config/waybar/config
+nvim .config/waybar/style.css
+nvim .config/waybar/config
+rm .config/nvim/ -r
+waybar
+nvim .config/hypr/hyprland.conf
+sudo pacman -S ttf-nerd-fonts-symbols-common
+waybar
+nvim .config/waybar/config
+sudo pacman -R otf-font-awesome
+sudo pacman -S ttf-font-awesome
+waybar
+sudo pacman -R ttf-nerd-fonts-symbols-common
+waybar
+nvim .config/waybar/config
+nvim .config/waybar/style.css
+waybar
+nvim .config/waybar/config
+sudo pacman -R ttf-noto-nerd
+sudo pacman -R ttf-noto-nerd manjaro-zsh-config
+sudo pacman -S ttf-nerd-fonts-symbols-common
+waybar
+sudo pacman -R ttf-nerd-fonts-symbols-common
+sudo pacman -S ttf-nerd-fonts-symbols-common
+sudo pacman -S ttf-nerd-fonts-symbols-2048-em
+waybar
+nvim .config/waybar/config
+squeekboard
+nvim .config/hypr/hyprland.conf
+head .config/hypr/hyprland.conf
+head .config/hypr/hyprland.conf -n 100
+gsettings set org.gnome.desktop.interface gtk-theme "Breeze-Dark"
+sudo pacman -S qt5ct
+nvim .config/hypr/hyprland.conf
+pkill Hypr
+nvim .config/hypr/hyprland.conf
+pkill waybar
+waybar
+nvim .config/waybar/config
+waybar
+nvim .config/waybar/config
+foot -s
+nvim .config/waybar/config
+nvim .config/waybar/config
+nvim .config/hypr/hyprland.conf
+pkill Hypr
+sensors
+nvim .config/hypr/hyprland.conf
+sudo pacman -S brightnessctl
+nvim .config/hypr/hyprland.conf
+pkill Hypr
+nvim .config/hypr/hyprland.conf
+hyprctl
+hyprctl monitors
+nvim .config/hypr/hyprland.conf
+hyprctl monitors
+nvim .config/hypr/hyprland.conf
+hyprctl monitors
+top
+nvim .config/hypr/hyprland.conf
+pkill Hypr
+hyprctl monitors
+ls
+systemctl status iptsd
+DISPLAY= foot
+WAYLAND_DISPLAY= foot
+WAYLAND_DISPLAY=1 foot
+WAYLAND_DISPLAY=wayland-1 foot
+sudo pacman -S alacritty
+alacritty 
+sudo pacman -S squeekboard
+sudo pacman -Syu
+nvim .config/hypr/hyprland.conf
+sudo pacman -S wl-paste wlsunset
+sudo pacman -S wlpaste wlsunset
+nvim .config/hypr/hyprland.conf
+monitor-sensor
+wget https://github.com/tedk0n/autorotate_sway_script/raw/master/autorotate.sh -O .config/
+wget https://github.com/tedk0n/autorotate_sway_script/raw/master/autorotate.sh -O .config/autorotate.sh
+chmod +x .config/autorotate.sh
+monitor-sensor | bash .config/autorotate.sh
+hyprctl 
+hyprctl hyprpaper
+hyprctl hyprpaper -h
+hyprctl hyprpaper help
+nvim .config/hypr/hyprland.conf
+sudo pacman -S swayidle
+sudo pacman -S swaylock
+nvim .config/hypr/hyprland.conf
+sudo pacman -S swaylockd
+nvim .config/hypr/hyprland.conf
+cat .config/hypr/hyprland.conf
+waylockd --clock --screenshots --effect-blur 160x2 --effect-vignette 0.8:0.2 --grace 0 --fade-in 0
+swaylock --clock --screenshots --effect-blur 160x2 --effect-vignette 0.8:0.2 --grace 0 --fade-in 0
+sudo pacman -S paru
+git clone https://aur.archlinux.org/paru.git
+cd paru/
+alacritty -h
+nvim .config/waybar/config
+makepkg -si
+paru hyprpaper
+paru -S hyprpaper
+cd
+hyprpaper -h
+pkill swaybg
+hyprpaper
+hyprpaper .wallpaper
+nvim ~/.config/hypr/hyprpaper.conf
+hyprpaper
+nvim ~/.config/hypr/hyprpaper.conf
+hyprpaper
+nvim ~/.config/hypr/hyprpaper.conf
+hyprpaper
+ls .wallpaper
+file .wallpaper
+mv .wallpaper .wallpaper.jpg
+nvim ~/.config/hypr/hyprpaper.conf
+file .wallpaper
+hyprpaper
+nvim ~/.config/hypr/hyprpaper.conf
+hyprpaper
+nvim ~/.config/hypr/hyprpaper.conf
+hyprpaper
+hyprctl setcursor Breeze
+hyprctl setcursor Breeze 24
+hyprctl setcursor Breez 24
+hyprctl setcursor Breeze 24
+swaybg
+hyprpaper
+waybar
+pkill waybar
+waybar
+nvim .config/waybar/style.css
+nvim ~/.config/hypr/hyprpaper.conf
+nvim ~/.config/hypr/hyprland.conf
+nvim .config/rofi/theme.rasi
+nvim ~/.config/hypr/hyprland.conf
+cp .config/waybar/config .config/waybar/config.old
+sudo pacman -R xdg-desktop-portal-kde
+sudo pacman -R xdg-desktop-portal-kde manjaro-kde-settings
+sudo pacman -R xdg-desktop-portal-kde manjaro-kde-settings xdg-desktop-portal-impl
+sudo pacman -S xdg-desktop-portal-wlr
+sudo pacman -R xdg-desktop-portal-kde manjaro-kde-settings
+nvim .config/rofi/theme.rasi
+sudo pacman -S wlsunset
+paru wlsunset
+paru squeekboard
+paru -R squeekboard
+paru squeekboard
+sync
+paru sway
+man alacritty.conf
+man alacritty
+wget https://github.com/zatchheems/tokyo-night-alacritty-theme/raw/main/tokyo-night.yaml
+mkdir .config/alacritty
+mv tokyo-night.yaml .config/alacritty/
+nvim .config/alacritty/alacritty.yml
+rm .config/alacritty/tokyo-night.yaml
+ls
+sudo nano /etc/systemd/logind.conf
+sudo systemctl restart systemd-logind
+nvim .config/hypr/hyprland.conf
+ls /usr/share/fonts/TTF/
+firefox 
+pkill firefox
+nvim .config/alacritty/alacritty.yml
+ls /usr/share/fonts/TTF/
+config nu
+zsh
+ls
+cd paru/
+date
+date format
+date format '%r'
+date now | date format '%r'
+date now | date format '%a'
+date now | date format '%b'
+date now | date format '%c'
+date now | date format '%d'
+date now | date format '%e'
+date now | date format
+date format
+date format -h
+date format -l
+date
+date now
+(date now - date now)date format
+(date now - date now) | date format
+date now | date format
+config env
+paru -R squeekboard
+paru squeekboard
+paru -R squeekboard-git
+paru -R aur/squeekboard
+paru squeekboard
+squeekboard-entry 
+squeekboard-test-layout 
+squeekboard
+paru squeekboard
+paru
+paru -S paru
+paru -S paru-bin
+paru
+maliit-keyboard -h
+pkill Hypr
+squeekboard
+squeekboard -h
+squeekboard --help-all
+squeekboard
+pkill Hypr
+squeekboard
+pkill Hypr
+squeekboard
+systemctl --user status dbus
+sudo poweroff
+paru brillo
+brillo 
+brillo -h
+brillo --help
+man brillo
+brillo -A 10
+cat /usr/lib/udev/rules.d/*br*
+sudo usermod
+sudo usermod -a -G video peter
+Hyprland
+squeekboard
+paru -R squeekboard
+git clone https://gitlab.gnome.org/World/Phosh/squeekboard
+cd squeekboard/
+ls
+make
+cargo build
+meson build
+ninja
+make
+ls
+ninja -C build/
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled true
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled false
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled true
+./build/src/squeekboard
+paru squeekboard
+squeekboard 
+maliit-keyboard
+squeekboard 
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled false
+sudo poweroff
+nmcli dev wifi connect OCSB --ask
+nmcli conn del OCSB
+nmcli dev wifi connect OCSB --ask
+ls /dev/rtc0
+alacritty -h
+alacritty -e new
+alacritty -e window
+alacritty msg new
+alacritty msg --help
+alacritty msg create-window
+nvim .config/hypr/hyprland.conf
+paru swaylockd
+nvim .config/hypr/hyprland.conf
+paru swaylock-effects
+swaylock --clock --screenshots --effect-blur 160x2 --effect-vignette 0.8:0.2 --grace 0 --fade-in 0
+paru swayidle
+cat .hyprland/hyprlandCrashReport10575.txt
+cat .hyprland/hyprlandCrashReport23316.txt
+cat .hyprland/hyprlandCrashReport* | grep -i board
+grep -H board .hyprland/hyprlandCrashReport*
+cat .hyprland/hyprlandCrashReport6526.txt
+paru
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled true
+paru wlroots
+paru wlroots-git
+paru hyprland-git
+paru -R hyprland-git
+paru hyprland-git
+paru --rebuild hyprland-git
+paru -S xdg-desktop-portal-wlr
+nmcli conn up TCIS-NET
+sensors
+ls
+sudo cp /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi /boot/efi/EFI/Linux/working.efi
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo nano /etc/kernel/cmdline
+sudo mount /boot/
+sudo mount /boot/efi/
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo cp /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi /boot/efi/EFI/Linux/working.efi
+sudo mount /boot/
+sudo mount /boot/efi/
+sudo nano /etc/kernel/cmdline
+sudo nano /etc/mkinitcpio.conf
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo rm /boot/efi/EFI/Linux/working.efi
+sudo nano /etc/mkinitcpio.conf
+ls /usr/lib/initcpio/hooks/encrypt
+sudo nano /etc/mkinitcpio.conf
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+foot
+alacritty
+foot
+alacritty
+sudo nano /etc/kernel/cmdline
+sudo cp /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi /boot/efi/EFI/Linux/working.efi
+sudo nano /etc/mkinitcpio.conf
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo nano /etc/mkinitcpio.conf
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo reboot
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo reboot
+sudo nano /etc/kernel/cmdline
+sudo nano /etc/mkinitcpio.conf
+lsmod | grep tpm
+ls /dev/tpm0
+lsmod | grep tcg
+lsmod | grep tis
+lsmod
+sudo nano /etc/kernel/cmdline
+sudo modprobe tpm2-tss
+systemd-cryptenroll --tpm2-device=list
+sudo modprobe tpm_crb
+lsmod | grep tpm
+/usr/lib/systemd/systemd-cryptsetup attach root /dev/nvme0n1p9 - tpm2-device=auto
+sudo /usr/lib/systemd/systemd-cryptsetup attach root /dev/nvme0n1p9 - tpm2-device=auto
+systemd-cryptenroll --tpm2-device=list
+sudo systemd-cryptenroll --tpm2-device=auto --tpm2-pcrs=0+7 /dev/nvme0n1p9
+sudo /usr/lib/systemd/systemd-cryptsetup attach root /dev/nvme0n1p9 - tpm2-device=auto
+sudo cryptsetup luksKillSlot
+sudo cryptsetup luksKillSlot /dev/nvme0n1p9 1
+sudo cryptsetup luksKillSlot /dev/nvme0n1p9 2
+sudo systemd-cryptenroll --tpm2-device=auto --tpm2-pcrs=0+7 /dev/nvme0n1p9
+sudo /usr/lib/systemd/systemd-cryptsetup attach root /dev/nvme0n1p9 - tpm2-device=auto
+sudo dmesg
+sudo /usr/lib/systemd/systemd-cryptsetup attach root /dev/nvme0n1p9 - tpm2-device=auto
+sudo cryptsetup luksKillSlot /dev/nvme0n1p9 2
+sudo cryptsetup luksKillSlot /dev/nvme0n1p9 1
+sudo cryptsetup-token
+sudo cryptsetup token
+sudo cryptsetup token remove /dev/nvme0n1p9
+sudo cryptsetup token remove /dev/nvme0n1p9 --token-id 0
+sudo cryptsetup token remove /dev/nvme0n1p9 --token-id 1
+sudo cryptsetup token remove /dev/nvme0n1p9 --token-id 2
+sudo cryptsetup token remove /dev/nvme0n1p9 --token-id 3
+sudo cryptsetup token remove /dev/nvme0n1p9 --token-id 0
+sudo systemd-cryptenroll --tpm2-device=/dev/tpm0 --tpm2-pcrs=0+7 /dev/nvme0n1p9
+sudo systemd-cryptenroll --tpm2-device=/dev/tpm0 --tpm2-pcrs=7 /dev/nvme0n1p9
+ls /dev/tpmrm0
+sudo systemd-cryptenroll --tpm2-device=/dev/tpmrm0 --tpm2-pcrs=7 /dev/nvme0n1p9
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+systemctl reboot
+cat /proc/cmdline
+sudo systemd-cryptenroll --wipe-slot=tpm2 --tpm2-device=/dev/tpmrm0 --tpm2-pcrs=7 /dev/nvme0n1p9
+sudo /usr/lib/systemd/systemd-cryptsetup attach root /dev/nvme0n1p9 - tpm2-device=/dev/tpmrm0
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo rm /boot/efi/EFI/Linux/working.efi
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+systemctl reboot
+sudo modprobe tpm2-tss
+find /lib/modules/6.2.8-arch1-1-surface/ | grep -i tpm
+find /lib/modules/6.2.8-arch1-1-surface/
+find /lib/modules/6.2.8-arch1-1-surface
+^find /lib/modules/6.2.8-arch1-1-surface
+^find /lib/modules/6.2.8-arch1-1-surface | grep tpm
+lsmod
+sudo blkid
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+uname -r
+systemctl reboot
+cat /etc/crypttab
+sudo nano  /etc/crypttab
+ls /crypto_keyfile.bin
+sudo nano  /etc/crypttab
+sudo nano /etc/crypttab
+sudo nano /crypto_keyfile.bin
+sudo nano /etc/crypttab
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+systemctl reboot
+journalctl 
+sudo nano /etc/crypttab
+journalctl | grep -i tpm
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+systemctl reboot
+paru tss
+ls /usr/lib/initcpio/hooks/
+cat /usr/lib/initcpio/hooks/* | grep tpm
+cat /usr/lib/initcpio/hooks/* | grep -i tpm
+cat /usr/lib/initcpio/install/sd-encrypt
+cat /usr/lib/initcpio/install/* | grep tpm
+grep -H tpm /usr/lib/initcpio/install/*
+sudo nano /usr/lib/initcpio/install/sd-encrypt
+ls /usr/lib/libtss2*
+sudo nano /usr/lib/initcpio/hooks/shell
+sudo nano /usr/lib/initcpio/hooks/encrypt
+sudo nano /usr/lib/initcpio/hooks/osk-sdl
+sudo nano /usr/lib/initcpio/hooks/encrypt
+sudo nano /usr/lib/initcpio/hooks/shell
+sudo chmod +x /usr/lib/initcpio/hooks/shell
+sudo chmod +x /usr/lib/initcpio/install/osk-sdl
+sudo nano /usr/lib/initcpio/install/osk-sdl
+sudo nano /usr/lib/initcpio/install/shell
+sudo nano /usr/lib/initcpio/install/osk-sdl
+sudo nano /usr/lib/initcpio/install/shell
+sudo chmod +x /usr/lib/initcpio/install/shell
+sudo nano /etc/mkinitcpio.conf
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+systemctl reboot
+sudo nano /etc/mkinitcpio.conf
+sudo chmod +x /usr/lib/initcpio/hooks/shell
+sudo nano /usr/lib/initcpio/hooks/shell
+sudo nano /usr/lib/initcpio/hooks/osk-sdl
+sudo nano /usr/lib/initcpio/hooks/shell
+sudo ls /boot/efi/EFI/Linux
+sudo rm /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.2.8-arch1-1-surface.efi
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo nano /etc/mkinitcpio.conf
+sudo /usr/lib/systemd/systemd-cryptsetup attach root /dev/nvme0n1p9 - tpm2-device=/dev/tpmrm0
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo reboot
+sudo nano /etc/kernel/cmdline
+sudo nano /etc/mkinitcpio.conf
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+journalctl -b | grep -i tpm
+journalctl -b | grep -i tpm2
+journalctl -b | grep -i luks
+journalctl -b
+sudo journalctl -b
+sudo journalctl vacuum
+sudo journalctl --vacuum
+sudo journalctl --vacuum ==vacuum-size 100M
+sudo journalctl --vacuum --vacuum-size 100M
+sudo journalctl --vacuum-size 100m
+sudo journalctl --vacuum-size 100M
+sudo journalctl | grep tpm
+sudo journalctl | grep -i tpm
+paru tpm2-tools
+ls /usr/lib/initcpio/hooks/
+sudo rm /usr/lib/initcpio/hooks/shell
+sudo rm /usr/lib/initcpio/install/shell
+ls /usr/lib/initcpio/hooks/
+sudo nano /etc/systemd/journald.conf
+sudo journalctl | grep -i tpm
+ls /usr/lib/initcpio/hooks/
+paru tpm2-tss
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+systemctl reboot
+sudo journalctl | grep -i tpm
+sudo nano /usr/lib/initcpio/install/sd-encrypt
+sudo nano /usr/lib/initcpio/install/osk-sdl
+sudo nano /etc/initcpio/install/iptsd
+sudo nano /etc/initcpio/install/tpm2-tss
+whereis libtss2-tcti-device.so
+sudo nano /etc/initcpio/install/tpm2-tss
+sudo nano /etc/initcpio/install/iptsd
+sudo nano /etc/initcpio/hooks/iptsd
+sudo nano /etc/initcpio/hooks/tpm2-tss
+sudo nano /etc/initcpio/install/tpm2-tss
+sudo chmod +x /etc/initcpio/install/tpm2-tss
+sudo nano /etc/mkinitcpio.conf
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+ls /usr/lib/libtss2*
+sudo nano /etc/initcpio/install/tpm2-tss
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo nano /etc/initcpio/install/tpm2-tss
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo journalctl | grep -i tpm
+^find /usr | grep tpm
+^find /usr | grep tpm2
+sudo nano /etc/initcpio/install/tpm2-tss
+sudo journalctl | grep -i tpm
+paru tpm2-tss
+sudo nano /usr/lib/initcpio/install/sd-encrypt
+paru systemd-cryptsetup
+sudo nano /etc/initcpio/install/tpm2-tss
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+systemctl reboot
+sudo nano /etc/sddm.conf
+sudo nano /etc/sddm.conf.d/kde_settings.conf
+sudo nano /etc/sddm.conf
+sudo nano /etc/sddm.conf.d/kde_settings.conf
+pkill Hypr
+paru -S qtvirtualkeyboard
+paru virtualkeyboard
+sudo nano /etc/sddm.conf
+sudo systemctl restart sddm
+pkill firefox
+paru qtvkbd
+qtvkbd 
+paru -R qtvkbd
+squeekboard 
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+systemctl reboot
+nvim .config/hypr/hyprland.conf
+hyprctl devices
+sudo reboot
+top
+hyprctl setcursor Breeze 24
+mkdir wordcounter
+cd wordcounter/
+clear
+nvim manifest.json
+flatpak install chrome
+nvim index.html
+cd
+mv wordcounter/ Documents/
+cd Documents/wordcounter/
+paru
+Hyprland
+paru
+sync
+squeekboard 
+rm .hyprland/hyprlandCrashReport*
+squeekboard 
+cat .hyprland/hyprlandCrashReport53926.txt
+cat /tmp/hypr/$(ls -t /tmp/hypr/ | head -n 2 | tail -n 1)/hyprland.log
+bash
+cat .hyprland/hyprlandCrashReport53926.txt > hyprland_crash_report.log
+cat .hyprland/hyprlandCrashReport53926.txt | save hyprland_crash_report.log
+hyprctl
+Hyprland --version
+Hyprland --help
+Hyprland -h
+flatpak install obs
+paru -S xdg-desktop-portal-hyprland
+flatpak install obs
+flatpak install obs-studio
+flatpak install obs
+nvim .config/hypr/hyprland.conf
+nvim .config/rofi/theme.rasi
+cat .config/hypr/hyprland.conf | save hyprland.conf
+ls
+mv hyprland.conf hyprland.conf.txt
+paru -S hyprland-git
+pkill Hypr
+nvim .config/hypr/hyprland.conf
+ls /usr/libexec
+nvim .config/hypr/hyprland.conf
+^find /usr | grep xdg-de
+/usr/lib/xdg-desktop-portal-hyprland
+/usr/lib/xdg-desktop-portal
+/usr/lib/xdg-desktop-portal-hyprland
+ls .config/pipewire.conf.d
+mkdir .config/pipewire.conf.d
+ls `36.wav`
+nvim .config/pipewire.conf.d/convolver.conf
+systemctl --user restart pipewire
+pw-top 
+systemctl --user restart pipewire-pulse
+pw-top 
+mkdir -p ~/.config/pipewire/pipewire.conf.d
+mkdir ~/.config/pipewire/pipewire.conf.d
+mv .config/pipewire.conf.d/convolver.conf .config/pipewire/pipewire.conf.d/
+rm .config/pipewire.conf.d/ -r
+systemctl --user restart pipewire
+pw-top 
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+systemctl --user restart pipewire
+systemctl --user restart pipewire pipewire-pulse
+pw-top 
+systemctl --user restart pipewire pipewire-pulse wireplumber
+pw-top 
+paru -S pavucontrol
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+cp /usr/share/pipewire/filter-chain/sink-eq6.conf ~/.config/pipewire/pipewire.conf.d/
+systemctl --user restart pipewire pipewire-pulse wireplumber
+pw-top 
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+nvim .config/pipewire/pipewire.conf.d/sink-eq6.conf
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+nvim .config/pipewire/pipewire.conf.d/sink-eq6.conf
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+head .config/pipewire/pipewire.conf.d/sink-eq6.conf
+head .config/pipewire/pipewire.conf.d/sink-eq6.conf -n 20
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+systemctl --user restart pipewire pipewire-pulse wireplumber
+pw-top 
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+tail .config/pipewire/pipewire.conf.d/sink-eq6.conf -n 20
+tail .config/pipewire/pipewire.conf.d/sink-eq6.conf -n 50
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+systemctl --user restart pipewire pipewire-pulse wireplumber
+pw-top 
+systemctl --user restart pipewire pipewire-pulse wireplumber
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+systemctl --user restart pipewire pipewire-pulse wireplumber
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+systemctl --user restart pipewire pipewire-pulse wireplumber
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+systemctl --user restart pipewire pipewire-pulse wireplumber
+rm .config/pipewire/pipewire.conf.d/sink-eq6.conf
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+systemctl --user restart pipewire pipewire-pulse wireplumber
+pw-top 
+sudo dmesg
+cp /mnt/plain/Measurements* Documents/
+pip
+paru pip
+paru -S pip
+paru hifiscan
+paru pip
+paru -S python3-pip
+paru -S py3-pip
+paru -S pip3
+paru -S python-pip
+pip install -U hifiscan
+top
+powerprofilesctl 
+powerprofilesctl -h
+powerprofilesctl --help
+powerprofilesctl set power-saver
+powerprofilesctl --help
+sudo poweroff
+sudo nano /etc/timezone
+paru -S chrony
+sudo systemctl start crony
+sudo systemctl start cronyd
+sudo systemctl start chronyd
+sudo systemctl stop ntpd
+paru -R ntpd
+paru -R ntp
+sudo chronyc tracking
+sudo nano /etc/chrony.conf
+nvim .config/hypr/hyprland.conf
+pactl
+pactl -h
+pactl list
+pactl list-sinks
+pactl -h
+pactl get-default-sink
+pactl list
+nvim .config/hypr/hyprland.conf
+chmod +x .local/bin/volume.sh
+.local/bin/volume.sh
+.local/bin/volume.sh up
+.local/bin/volume.sh down
+nvim .local/bin/volume.sh
+pactl list | grep sink
+.local/bin/volume.sh down
+.local/bin/volume.sh up
+systemctl --user restart pipewire pipewire-pulse wireplumber
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+mkdir ~/.config/pipewire/filter-chain.conf.d
+mv .config/pipewire/pipewire.conf.d/convolver.conf .config/pipewire/filter-chain.conf.d/
+nvim .config/pipewire/filter-chain.conf
+pipewire -c filter-chain.conf
+systemctl --user restart pipewire pipewire-pulse wireplumber
+pipewire -c filter-chain.conf
+paru -S wireplumber
+nvim .config/pipewire/filter-chain.conf
+rm .config/pipewire/filter-chain.conf
+mv .config/pipewire/filter-chain.conf.d/convolver.conf .config/pipewire/pipewire.conf.d/
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+systemctl --user restart pipewire pipewire-pulse wireplumber
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+systemctl --user restart pipewire pipewire-pulse wireplumber
+cat .config/pipewire/pipewire.conf.d/convolver.conf
+nvim .config/pipewire/pipewire.conf.d/convolver.conf
+mv `36.wav` impulse.wav
+systemctl --user restart pipewire pipewire-pulse wireplumber
+cat .config/pipewire/pipewire.conf.d/convolver.conf
+paru
+nmcli conn up TCIS-NET
+ssh ssh.petms.ga
+paru -S lagrange
+ssh ssh.petms.ga
+nvim alphabetic.js
+cat alphabetic.js
+cat .ssh/id_ed25519.pub
+ssh-keygen
+ssh-keygen -t ed25519
+cat .ssh/id_ed25519.pub
+nvim .config/hypr/hyprland.conf
+hyprctl monitors
+ssh ssh.petms.ga
+powerprofilesctl
+powerprofilesctl set balanced
+paru
+paru -R vulkan-radeon
+paru -R vulkan-radeon lib32-vulkan-radeon
+paru
+paru rusticl
+clinfo
+paru -S hashcat
+hashcat --benchmark
+paru -R intel-compute-runtime
+clinfo
+paru -S spirv-tools
+paru -S spirv-llvm-translator
+paru -S rusticl
+paru rusticl
+clinfo
+RUSTICL_DEVICE_TYPE=cpu clinfo
+modprobe iris
+env RUSTICL_ENABLE=iris clinfo
+env RUSTICL_ENABLE=iris hashcat --benchmark
+paru -R opencl-mesa
+paru rusticl
+paru -S spirv-tools
+env RUSTICL_ENABLE=iris MESA_SHADER_CACHE_DISABLE=1 hashcat --benchmark
+env RUSTICL_ENABLE=iris hashcat --benchmark
+paru rusticl
+env RUSTICL_ENABLE=iris MESA_SHADER_CACHE_DISABLE=1 hashcat --benchmark
+paru rusticl
+ulimit -n 16384
+sudo ulimit
+oaru ulimit
+paru ulimit
+bash
+^ulimit
+sh -c 'ulimit'
+sh -c 'ulimit -n'
+sudo nano /etc/security/limits.conf
+paru
+paru -Syu
+paru intel opencl
+paru -R opencl-mesa
+paru -Syu
+paru intel opencl
+paru -S intel-compute-runtime
+paru -S intel-compute-runtime --overwrite
+sudo pacman -S intel-compute-runtime --overwrite
+paru -S intel-compute-runtime --overwrite *
+paru -S intel-compute-runtime 
+paru -S intel-compute-runtime --overwrite \*
+paru -S lld
+paru -S lld --overwrite \*
+clinfo
+sudo ldconfig
+paru opencl clang
+paru -S intel-opencl-clang
+paru -S intel-opencl-clang --overwrite \*
+clinfo
+sudo ldconfig
+pacman -Qo libiga64.so
+pacman -Qo /usr/lib/libiga64.so
+pacman -Qo /usr/lib/libiga64.so.1
+paru -S intel-gpu-compiler --overwrite \*
+paru -S igc --overwrite \*
+paru intel gpu compiler
+paru intel opencl
+paru -S intel-graphics-compiler --overwrite \*
+sudo ldconfig
+clinfo
+sync
+hashcat --benchmark
+hashcat -d2 --benchmark
+hashcat -h --benchmark
+hashcat -w1 --benchmark
+sensors
+hashcat -w1 -b -m 2500
+paru -S john
+john
+john --test
+sudo hcxdumptool -i wlan1mon -o galleria.pcapng --enable__status=1
+paru hcxdumptool
+sudo hcxdumptool -i wlan1mon -o galleria.pcapng --enable__status=1
+sudo hcxdumptool -i wlan1mon -o galleria.pcapng --enable_status=1
+paru -S aircrack-ng
+sudo hcxdumptool -i wlan1mon -o galleria.pcapng --enable_status=1
+sudo airmon-ng start wlan0
+sudo hcxdumptool -i wlan1mon -o galleria.pcapng --enable_status=1
+sudo hcxdumptool -i wlan0mon -o galleria.pcapng --enable_status=1
+sudo airmon-ng stop wlan0
+sudo airmon-ng stop wlan0mon
+sudo systemctl restart NetworkManager iwd
+nmcli conn up TCIS-NET
+cd Documents/wordcounter/
+ls
+nvim index.html
+nvim manifest.json
+nvim content.js
+nvim manifest.json
+flatpak run com.google.Chrome
+flatpak run com.google.chrome
+flatpak run com.google.Chrome
+flatpak update
+/usr/lib/xdg-desktop-portal-hyprland
+systemctl --user restart dbus
+nvim content.js
+systemctl reboot
+cd Documents/wordcounter/
+nvim manifest.json
+nvim content.js
+nvim index.html
+nvim popup.js
+nvim content.js
+nvim popup.js
+nvim index.html
+nvim popup.js
+nvim manifest.json
+nvim index.html
+cat *
+nvim index.html
+nvim style.css
+nvim index.html
+nvim style.css
+nvim index.html
+nvim popup.js
+nvim style.css
+nvim manifest.json
+nvim index.html
+nvim style.css
+nvim popup.js
+nvim index.html
+nvim popup.js
+nvim style.css
+nvim index.html
+nvim style.css
+nvim index.html
+nvim popup.js
+nmcli conn up TCIS-NET
+sudo systemctl restart NetworkManager iwd
+nmcli conn up TCIS-NET
+sudo dmesg
+sudo rmmod iwlwifi
+sudo rmmod iwlwifi iwlmvm
+sudo modprobe iwlmvm
+nmcli conn up TCIS-NET
+nmcli conn del TCIS-NET
+nmcli dev wifi connect OCSB --ask
+nmcli dev wifi connect TCIS-NET --ask
+sudo systemctl restart NetworkManager iwd
+nmcli dev wifi connect TCIS-NET --ask
+ip addr
+nvim index.html
+nvim style.css
+nvim manifest.json
+nvim style.css
+nvim index.html
+sudo systemctl stop power-profiles-daemon
+sudo systemctl disable power-profiles-daemon
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+squeekboard 
+powerprofilesctl set balanced
+powerprofilesctl
+powerprofilesctl set power-saver
+systemctl status power-profiles-daemon
+systemctl status tlp
+sudo systemctl disable power-profiles-daemon
+sudo systemctl mask power-profiles-daemon
+sudo systemctl stop power-profiles-daemon
+sudo systemctl start tlp
+clear
+cd Documents/School/
+;s
+ls
+clear
+ls
+nmcli dev wifi connect TCIS-NET --ask
+pw-link
+pw-link -l
+cd Documents/wordcounter/
+nvim manifest.json
+nvim background.js
+ls
+nvim background.js
+nvim content.js
+nvim background.js
+nvim manifest.json
+rm background.js
+nvim popup.js
+nvim background.js
+nvim manifest.json
+rm background.js
+nvim popup.js
+rm background.js
+nvim manifest.json
+nvim background.js
+nvim manifest.json
+nvim background.js
+ls
+nvim background.js
+rm background.js
+nvim manifest.json
+nvim content.js
+nvim popup.js
+ls
+rm Admission-300349545.pdf
+ls
+git init
+git branch -M main
+git add .
+git co
+git commit
+git remote add origin git@github.com:peter-marshall5/word-count.git
+git push -u origin main
+cat ~/.ssh/id_ed25519.pub
+git push -u origin main
+git pull
+ls
+nvim report.txt
+cat report.txt
+nvim .config/hypr/hyprland.conf
+hyprctl monitors
+nvim .config/hypr/hyprland.conf
+hyprctl monitors
+nmcli dev wifi connect TCIS-NET
+ip addr
+sudo mdorpobe iwlwifi
+sudo modprobe iwlwifi
+sudo dmesg | grep err
+sudo dmesg | grep -i err
+sudo poweroff
+sudo dmesg | grep -i err
+uname -r
+sudo sh -c 'echo -ne mask > /sys/firmware/acpi/interrupts/gpe51'
+sudo sh -c 'echo -ne 0 > /sys/firmware/acpi/interrupts/gpe51'
+sudo sh -c 'echo 0 > /sys/firmware/acpi/interrupts/gpe51'
+git clone https://github.com/linux-surface/linux-surface/ --recurse-submodules
+cd linux-surface/pkg/arch/
+ls
+cd kernel/
+nvim PKGBUILD
+cd
+cd linux-surface/pkg/arch/kernel/
+nvim PKGBUILD
+cd
+asp
+paru -S asp
+asp
+asp update linux
+asp export linux
+cd linux/
+ls
+cd linux-surface/pkg/arch/kernel/
+nvim PKGBUILD
+cat PKGBUILD
+cat PKGBUILD | grep _package -A 20
+cat PKGBUILD | grep _package -A 30
+cat PKGBUILD | grep \$_mok
+nvim PKGBUILD
+cat PKGBUILD | grep _mok
+nvim PKGBUILD
+nvim PKGBUILD
+makepkg 
+nvim PKGBUILD
+makepkg 
+nvim PKGBUILD
+ls ~/keys/
+nvim PKGBUILD
+sudo mv ~/keys/MOK.priv ~/keys/MOK.key
+sudo mv ~/keys/MOK.pem ~/keys/MOK.crt
+nvim PKGBUILD
+makepkg -si
+nvim PKGBUILD
+makepkg -si
+makepkg
+nvim PKGBUILD
+makepkg
+paru -S cpio xmlto
+makepkg -i
+cd linux-surface/pkg/arch/kernel/
+nvim PKGBUILD
+nvim PKGBUILD
+cp linux-surface/pkg/arch/kernel/
+cp ~/linux-surface/pkg/arch/kernel/config .
+cp ~/linux-surface/pkg/arch/kernel/*.patch .
+cd linux-surface/pkg/arch/kernel/
+cp ~/linux-surface/pkg/arch/kernel/arch.config .
+cp ~/linux-surface/pkg/arch/kernel/surface.config .
+cp ~/linux-surface/pkg/arch/kernel/PKGBUILD .
+nvim PKGBUILD
+makepkg -i
+nvim PKGBUILD
+makepkg -i
+cd
+paru -S linux-edge
+rm linux-surface/ linux/ -r
+paru linux
+paru -S linux
+paru -S linux62
+paru -S linux63
+ls /boot
+sudo kernel-install add 6.3 /boot/vmlinuz-linux-surface
+ls /lib/modules/
+sudo kernel-install add 6.3.0-1-MANJARO /boot/vmlinuz-linux-surface
+sudo nano /etc/kernel/install.conf
+sudo nano /etc/mkinitcpio.conf
+ln -s keys/MOK.key keys/MOK.priv
+ln -s keys/MOK.crt keys/MOK.pem
+sudo kernel-install add 6.3.0-1-MANJARO /boot/vmlinuz-linux-surface
+ls keys/MOK.priv
+rm keys/MOK.priv
+ln -s /home/peter/keys/MOK.key keys/MOK.priv
+ls keys/MOK.priv
+ln -s /home/peter/keys/MOK.crt keys/MOK.pem
+ls keys/MOK.pem
+rm keys/MOK.pem
+ls keys/MOK.pem
+ln -s /home/peter/keys/MOK.crt keys/MOK.pem
+ls keys/MOK.pem
+sudo kernel-install add 6.3.0-1-MANJARO /boot/vmlinuz-linux-surface
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.3.0-1-MANJARO /boot/vmlinuz-linux-surface
+systemctl reboot
+sudo ls /boot/efi/EFI/Linux
+sudo rm /boot/efi/EFI/Linux/b0cbbed2274745e59af878f25b988a40-6.3.0-1-MANJARO.efi
+paru -R linux63
+paru
+pkill Hypr
+squeekboard 
+top
+pkill -9 swaylock
+top
+ssh ssh.petms.ga
+sudo chronyc tracking
+sudo systemctl enable chronyd
+systemctl status ntpd
+sudo systemctl start chronyd
+sudo chronyc tracking
+paru -S distrobo
+paru -S distrobox
+distrobox 
+distrobox create alpine
+paru -S podman
+distrobox create alpine
+distrobox create -h
+distrobox create -i alpine
+distrobox enter
+wget https://github.com/peter-marshall5/linux-veyron-alpine/raw/main/config-linux.arm
+diff config-linux.arm linux-veyron-alpine/config-linux.arm
+cat /proc/cmdline
+sudo dmesg | grep -i err
+sudo dmesg | grep psr
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.3.0-1-MANJARO /boot/vmlinuz-linux-surface
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+diff config-linux.arm linux-veyron-alpine/config-linux.arm
+cd linux-veyron-alpine/
+git add .
+git commit
+nvim .gitignore
+git del src/config-linux.arm
+git rm src/config-linux.arm
+git commit
+git rm src/config-linux.arm -f
+git commit
+git add .
+git commit
+cp config-linux.arm src
+git commit
+git add .
+git commit
+ls src
+git commit
+nvim APKBUILD
+git add .
+git commit
+nmcli dev wifi connect TCIS-NET
+sudo poweroff
+top
+hyprctl monitors
+nvim .config/hypr/hyprland.conf
+sudo nano /etc/kernel/cmdline
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+paru
+cd Downloads/
+git clone https://github.com/linux-surface/surface-uefi-firmware
+cd surface-uefi-firmware/
+./repack.sh -f ../SurfacePro9_Win11_22621_22.101.15506.0.msi
+./repack.sh -f ../SurfacePro9_Win11_22621_22.101.15506.0.msi -o out
+paru -S gcab msitools dos2unix
+./repack.sh -f ../SurfacePro9_Win11_22621_22.101.15506.0.msi -o out
+fwupdmgr install --allow-older --allow-reinstall --force out/
+fwupdmgr install --allow-older --allow-reinstall --force out/surfacesam_6.0.22923_72e2097b-1183-41d2-8fa2-a2cba7501584.cab
+fwupdmgr
+fwupdmgr --help
+fwupdmgr get-updates
+modinfo i915
+sudo nano /etc/kernel/cmdline
+sudo nano /etc/modprobe.d/i915.conf
+cat /etc/kernel/cmdline
+sudo nano /etc/modprobe.d/i915.conf
+sudo nano /etc/kernel/cmdline
+sudo nano /etc/modprobe.d/i915.conf
+modinfo i915 | grep d
+modinfo i915 | grep dc
+sudo nano /etc/modprobe.d/i915.conf
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+systemctl status tlp
+config env
+nvim .config/nushell/env.nu
+paru
+nvim .config/nushell/env.nu
+nvim .config/nushell/config.nu
+cd linux-veyron-alpine/
+ls
+cd
+ls
+cd Downloads/
+ls
+cd
+cd linux-veyron-alpine/
+cd /
+cd /bin/
+cd
+PARU
+paru
+wpctl status
+pw-top
+pw-link filter-chain-1204-28:output_FL
+pw-top
+pw-link output.filter-chain-1204-28:output_FL
+pw-link output.filter-chain-1204-28:output_FL Simultaneous:playback_fl
+pw-link output.filter-chain-1204-28:output_FL Simultaneous:playback_FL
+pw-link filter-chain-1204-28:output_FL Simultaneous:playback_FL
+pw-top
+alsa_output.pci-0000_00_1f.3.analog-stereo
+pw-link filter-chain-1204-28:output_FL alsa_output.pci-0000_00_1f.3.analog-stereo:playback_FL
+pw-link filter-chain-1204-28 alsa_output.pci-0000_00_1f.3.analog-stereo:playback_FL
+pw-link filter-chain-1204-28 alsa_output.pci-0000_00_1f.3.analog-stereo
+pw-top
+easyeffects --gapplication-service
+rm .config/pipewire/ -r
+nvim .config/hypr/hyprland.conf
+top
+hifiscan 
+systemctl --user restart pipewire pipewire-pulse wireplumber
+systemctl --user daemon-reload
+systemctl --user restart pipewire pipewire-pulse wireplumber
+bash
+paru linux studio plugins
+paru lsp
+paru linux-studio-plugins
+paru lsp-plugins
+paru -R lsp-plugins
+paru -Rsp lsp-plugins
+paru -S lsp-plugins
+paru -Rsp lsp-plugins
+paru -Rs lsp-plugins
+pacman -Qtdq
+pacman -Qtdq | sudo pacman -Rns -
+paru calf
+paru -S lsp-plugins
+sudo nano /etc/modprobe.d/i915.conf
+paru
+paru -R linux61
+paru -S linux63
+paru -R grub
+paru -Rc grub
+uname -r
+paru -Rc linux63
+paru -Rc linux62
+paru -R linux63
+paru -S linux63
+sudo nano /etc/fstab
+sudo mount /dev/mapper/luks-5a5c37aa-7129-437e-b7e3-8597f8ba0021 /mnt
+ls /mnt
+sudo btrfs subvol create /mnt/@boot
+sudo umount /boot/efi/
+sudo mv /boot/* /mnt/@boot/
+ls /boot
+sudo mount /boot
+sudo systemctl daemon-reload
+sudo mount /boot
+sudo umount /boot
+sudo mount /boot
+ls /boot
+sudo nano /etc/fstab
+sudo umount /boot
+sudo systemctl daemon-reload
+sudo mount /boot
+ls /boot
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo mount /boot/efi
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo ls /boot/efi/EFI/Linux
+uname -r
+sudo dmesg | grep psr
+sudo dmesg | grep i915
+sudo dmesg | grep -i err
+sudo dmesg | grep -i power
+paru -R linux63
+squeekboard 
+sudo dmesg | grep -i power
+sudo dmesg | grep -i err
+sudo dmesg | grep -i power
+sudo dmesg | grep -i err
+sudo dmesg
+paru -S linux63
+uname -r
+sudo dmesg
+uname -r
+paru -R linux63
+sync
+paru -S cloudflared
+cloudflared access ssh-config --hostname vm.example.com --short-lived-cert
+nvim .ssh/config
+cloudflared access ssh-config --hostname ssh.opcc.tk --short-lived-cert
+nvim .ssh/config
+ssh ssh.opcc.tk
+ssh petmshall@ssh.opcc.tk
+nvim .ssh/config
+ssh petmshall@ssh.opcc.tk
+ssh admin@ssh.opcc.tk
+ssh admin@192.168.1.126
+ssh admin@ssh.opcc.tk
+sudo poweroff
+ssh petmshall@ssh.opcc.tk
+nvim .ssh/config
+ssh ssh.opcc.tk
+ssh ssh.petms.ga
+ls
+ls Downloads/
+mkdir Downloads/nothing
+mkdir Downloads/nothing/seriously
+mkdir Downloads/nothing/seriously/stop
+bash
+rm .bash_history
+bash
+ssh ssh.petms.ga
+ssh ssh.opcc.tk
+top
+pkill -9 swaylock
+top
+ssh ssh.opcc.tk
+ssh admin@ssh.opcc.tk
+pkill -9 swaylock
+stress
+paru -S stres-ng
+paru -S stress-ng
+stress
+dig
+host
+paru -S dig
+paru dig
+paru -S bind-tools
+dig opcc.tk
+resolvectl flush-caches
+sudo resolvectl flush-caches
+sudo systemctl restart systemd-resolved
+resolvectl statistics
+sudo resolvectl flush-caches
+dig opcc.tk
+dig opcc.tk @192.168.1.1
+top
+nvim report.txt
+nmcli
+nmcli dev wifi
+nmcli dev wifi connect "Petro-Canada - Guest"
+ping 8.8.8.8
+nmcli dev wifi connect "Petro-Canada - Guest"
+sudo poweroff
+paru
+top
+paru
+ls .config/systemd/user/pipewire-session-manager.service
+cat .config/systemd/user/pipewire-session-manager.service
+ssh admin@ssh.opcc.tk
+pkill -9 chrome
+nvim .config/alacritty/alacritty.yml
+ssh ssh.opcc.tk
+nvim .config/alacritty/alacritty.yml
+ssh ssh.opcc.tk
+dig mc.opcc.tk
+flatpak install io.mrarm.mcpelauncher
+ssh ssh.opcc.tk
+paru -S iodine
+iodined -h
+ssh ssh.opcc.tk
+ls
+;s
+ls
+nvim .config/alacritty/alacritty.yml
+cd /bin/
+ls
+cd
+ls
+cd Documents/wordcounter/
+nvim content.js
+cd
+nvim .config/alacritty/alacritty.yml
+ls
+ssh ssh.opcc.tk
+.config/sway/sway-interactive-screenshot
+paru -S slurp grim
+notify-send
+notify-send a
+hyprctl 
+hyprctl notify
+hyprctl notify a
+hyprctl notify a b
+hyprctl notify a b c
+hyprctl notify
+hyprctl notify -h
+hyprctl notify A B
+hyprctl notify A Baaa
+hyprctl notify -1 10000 "rgb(ff1ea3)" "Hello everyone!"
+nvim .config/sway/sway-interactive-screenshot
+paru -S swaynag
+paru -S dunst
+notify-send a
+dunst 
+paru -S swaync
+notify-send a
+swaync 
+hyprctl notify -1 10000 "rgb(ff1ea3)" "Hello everyone!"
+htop
+clear
+ssh ssh.opcc.tk
+.config/sway/sway-interactive-screenshot
+paru wl-copy
+paru -S wl-clipboard
+ls
+.config/sway/sway-interactive-screenshot
+nvim .config/sway/sway-interactive-screenshot
+paru -S cups
+sudo systemctl start cups
+sudo usermod -a -G lpadmin peter
+nmcli dev wifi connect OCSB --ask
+ip addr
+dig duckduckgo.com
+dig safe.duckduckgo.com
+ssh ssh.opcc.tk
+dig safe.duckduckgo.com
+dig duckduckgo.com
+dig duckduckgo.com @8.8.8.8
+nmcli conn edit OCSB
+nmcli conn up OCSB
+dig duckduckgo.com @8.8.8.8
+dig duckduckgo.com @1.1.1.1
+dig duckduckgo.com @1.0.0.1
+nmcli conn edit OCSB
+nmcli conn up OCSB
+ping 8.8.8.8
+ping 8.8.4.4
+ping 1.1.1.1
+dig duckduckgo.com @1.0.0.1
+dig duckduckgo.com @1.1.1.1
+cd Documents/
+cargo new scratch-vars
+cd scratch-vars/
+ls
+nvim src/main.rs
+cargo add tokio
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+nvim Cargo.toml
+cargo run
+nvim Cargo.toml
+cargo run
+nvim Cargo.toml
+cargo run
+cargo add futures_util
+cargo run
+cargo add tokio_tungstenite
+cargo run
+nvim src/main.rs
+cargo run
+cargo add futures_channel
+cargo run
+cargo add url
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+nvim src/main.rs
+cargo run
+lsblk
+sudo mount /dev/nvme0n1p6 /mnt/plain/
+sudo mount /dev/nvme0n1p6 /mnt/enc/
+ls /mnt/enc
+sudo su
+cd Documents/claw-engine/
+ls
+cargo run
+sudo chown peter:peter . -R
+cargo run
+paru
+nmcli conn up TCIS-NET
+ssh ssh.opcc.tk
+nmcli conn up TCIS-NET
+sudo poweroff
+paru -S xournalpp-git
+clear
+ssh ssh.opcc.tk
+paru -S mpv
+sudo reboot
+ssh ssh.opcc.tk
+ssh ssh.opcc.tk -L 1488
+ssh ssh.opcc.tk -L 1488:localhost:1488
+ssh ssh.opcc.tk
+paru iptsd
+paru
+sudo poweroff
+cat /etc/kernel/cmdline
+sudo nano /etc/modprobe.d/i915.conf
+cd claw-engine/
+cd Documents/claw-engine/
+cargo run
+nvim src/blocks.rs
+cargo run
+nvim src/blocks.rs
+cargo run
+nvim src/project.rs
+nvim src/blocks.rs
+cargo run
+nvim src/blocks.rs
+cargo run
+nvim src/blocks.rs
+cargo run
+nvim src/blocks.rs
+cargo run
+nvim src/blocks.rs
+cargo run
+nvim src/blocks.rs
+cargo run
+nvim src/project.rs
+cargo run
+git add .
+git commit
+sudo nano /etc/modprobe.d/i915.conf
+git clone https://github.com/peter-marshall5/thisissand-hack
+cd thisissand-hack/
+cargo build --release
+ls -s target/release/sand-hack
+./target/release/sand-hack
+nvim src/main.rs
+scp target/release/sand-hack ssh.opcc.tk:
+cd thisissand-hack/
+nvim src/main.rs
+scp ~/Downloads/duck2-261465806 ssh.opcc.tk:
+file ~/Downloads/duck2-261465806
+ssh ssh.opcc.tk
+cargo run | save ../claw-log.txt
+cd Documents/claw-engine/
+nvim src/main.rs
+nvim src/project.rs
+mv src/project.rs src/ast.rs
+nvim src/main.rs
+nvim ../claw-log.txt
+cargo run
+nvim src/blocks.rs
+nvim src/main.rs
+cargo run
+nvim src/blocks.rs
+nvim src/ast.rs
+nvim src/load.rs
+nvim src/ast.rs
+nvim src/load.rs
+nvim src/ast.rs
+nvim src/load.rs
+nvim src/ast.rs
+nvim src/load.rs
+nvim src/main.rs
+cargo run
+nvim src/ast.rs
+nvim src/load.rs
+nvim src/blocks.rs
+git add .
+git commit
+nvim src/blocks.rs
+cargo run
+cd Documents/claw-engine/
+nvim src/ast.rs
+git push
+nvim src/ast.rs
+nvim src/main.rs
+nvim src/load.rs
+nvim src/ast.rs
+cd Documents/claw-engine/
+paru -S intel-gpu-tools
+sudo nano /etc/tlp.conf
+sudo tlp-stat -g
+systemctl status power-profiles-daemon
+sudo systemctl restart tlp
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+sudo nano /etc/fstab
+sudo powertop
+rfkill
+rfkill block bluetooth
+rfkill
+sudo powertop
+sudo modprobe configs
+cat /proc/config.gz | gzip -d | grep -i hotplug
+cat /sys/bus/cpu/devices/cpu0/hotplug/state
+top
+cd Documents/blog/
+git pull
+./build.sh
+nvim index.html
+ls
+nvim header.html
+nvim header-post.html
+nvim header.html
+nvim header-post.html
+nvim style.css
+./build.sh
+nvim header.html
+nvim header-post.html
+nvim header.html
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim header.html
+nvim header-post.html
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim build.sh
+nvim style.css
+./build.sh
+nvim build.sh
+nvim style.css
+nvim build.sh
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+nvim header-post.html
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+cd Documents/blog/
+./build.sh
+cd Documents/blog/
+./build.sh
+nvim style.css
+nvim header-post.html
+nvim footer-post.html
+nvim header-post.html
+./build.sh
+nvim style.css
+nvim header-post.html
+nvim footer-post.html
+./build.sh
+nvim style.css
+nvim footer.html
+nvim header.html
+.
+./build.sh
+nvim footer.html
+./build.sh
+nvim style.css
+git add .
+git commit
+git push
+cd
+ssh ssh.opcc.tk
+ssh ssh.opcc.tk -L 1488:localhost:1488
+ssh ssh.opcc.tk
+paru
+flatpak update
+systemctl shutdown
+systemctl poweroff
+nmcli conn up OCSB
+sudo nano /etc/modprobe.d/i915.conf
+modinfo i915 | grep dc
+sudo nano /etc/modprobe.d/i915.conf
+modinfo i915 | grep rc6
+modinfo i915 | grep rc
+sudo nano /etc/modprobe.d/i915.conf
+sudo systemctl enable cups
+sudo systemctl start cups
+sudo reboot
+ssh ssh.opcc.tk
+sudo nano /etc/modprobe.d/i915.conf
+sudo kernel-install add 6.2.8-arch1-1-surface /boot/vmlinuz-linux-surface
+sudo kernel-install add 6.2.10-arch1-1-surface /boot/vmlinuz-linux-surface
+cd Documents/blog/
+git pull
+nvim style.css
+nvim header.html
+nvim header-post.html
+nvim header.html
+nvim style.css
+./build.sh
+nvim footer-post.html
+./build.sh
+nvim style.css
+nvim header-post.html
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+git add .
+git commit
+git ammend
+git amend
+git -h
+git commit --amend
+git push
+cd
+git clone git@github.com:peter-marshall5/dead-simple-ssg.git
+cd dead-simple-ssg/
+cd
+mv dead-simple-ssg/ Documents/
+cd Documents/dead-simple-ssg/
+cp ../blog/*.html .
+cp ../blog/style.css .
+ls
+git add .
+git commit
+./build.sh
+git add .
+git commit
+nvim .gitignore
+git add .
+git commit
+git rm dist/
+git rm --cached dist/
+git rm --cached dist/ -r
+ls dist/blog/
+git add .
+git commit
+git rm gmi/index.gmi
+git rm --cached gmi/index.gmi
+git add .
+git commit
+git push
+cd Documents/blog/
+nvim style.css
+./build.sh
+git add .
+git commit
+git push
+cd ..
+cd dead-simple-ssg/
+cp ../blog/style.css .
+git add .
+git commit
+git push
+cd ..
+cd blog/
+nvim style.css
+git add .
+git commit
+git push
+cd ..
+cd dead-simple-ssg/
+cp ../blog/style.css .
+git add .
+cp ../blog/style.css .
+git add .
+git commit
+git push
+cd Documents/blog/
+nvim style.css
+cd Documents/blog/
+nvim build.sh
+nvim index.html
+nvim header.html
+nvim footer.html
+./build.sh
+nvim style.css
+./build.sh
+nvim build.sh
+./build.sh
+nvim build.sh
+nvim header.html
+nvim footer.html
+./build.sh
+nvim build.sh
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+./build.sh
+nvim style.css
+nvim build.sh
+./build.sh
+nvim build.sh
+./build.sh
+nvim build.sh
+./build.sh
+nvim build.sh
+./build.sh
+nvim build.sh
+./build.sh
+git branch
+git branch new-homepage
+git branch
+git branch -b new-homepage
+git branch
+git checkout -b new-homepage
+git checkout new-homepage
+git add .
+git commit
+./build.sh
+git commit
+git checkout main
+git log
+nvim build.sh
+nvim style.css
+git dff
+git diff
+git checkout new-homepage
+git diff
+git log
+git checkout main
+git log
+./build.sh
+nvim style.css
+cd Documents/blog/
+./build.sh
+nvim gmi/blog/image.gmi
+./build.sh
+nvim build.sh
+./build.sh
+nvim style.css
+nvim build.sh
+ls gmi/blog/
+ls
+mv gmi content
+ls
+ls content
+mv content/ gmi
+ls gmi/
+mkdir gmi/res
+nvim build.sh
+git add .
+git commit
+./build.sh
+nvim style.css
+nvim gmi/blog/image.gmi
+./build.sh
+nvim style.css
+./build.sh
+nvim gmi/blog/image.gmi
+./build.sh
+nvim style.css
+git add .
+git commit
+git log
+git commit
+git push
+./build.sh
+nvim style.css
+nvim gmi/blog/image.gmi
+./build.sh
+nvim style.css
+git add .
+git commit
+cd Documents/blog/
+git push
+cd Documents/blog/
+ls
+cd ..
+cd dead-simple-ssg/
+cp ../blog/style.css .
+cp ../blog/*.html .
+cp ../blog/build.sh .
+git diff
+git commit
+git add .
+git commit
+./build.sh
+mkdir gmi/res
+./build.sh
+git commit
+nvim README.md
+git add .
+git commit
+git push
+apru agate
+paru agate
+paru twind
+ssh ssh.opcc.tk
+paru amfora
+amfora
+amfora mc.opcc.tk
+amfora gmi.opcc.tk
+amfora gmi.petms.ga
+cd Documents/blog/
+git lfs
+paru git lfs
+git lfs
+git lfs install
+git lfs track gmi/res/
+git lfs status
+git lfs ls-files
+ls gmi
+ls gmi/res/
+git lfs ls-files
+git add .
+git lfs ls-files
+git lfs
+git commit
+git lfs track gmi/res/Wallpapers-pexels-photo-2941444650
+git lfs ls-files
+git lfs track gmi/res/*
+git lfs status
+git add .
+git commit
+git lfs status
+git lfs track gmi/res/*
+git lfs
+git lfs untrack
+git lfs untrack gmi/res/Wallpapers-pexels-photo-2941444650
+git lfs track 'gmi/res/*'
+git lfs status
+git add .
+git lfs status
+git lfs ls-files
+git lfs untrack gmi/res/Wallpapers-pexels-photo-2941444650
+git lfs ls-files
+git lfs status
+git push
+git commit
+nvim gmi/blog/image.gmi
+file gmi/res/Wallpapers-pexels-photo-2941444650
+mv gmi/res/Wallpapers-pexels-photo-2941444650 gmi/res/test.jpg
+nvim gmi/blog/image.gmi
+git add .
+git commit
+ssh ssh.opcc.tk
+git push
+ssh ssh.opcc.tk
+cd ..
+cd d
+cp ../blog/build.sh .
+git diff
+nvim build.sh
+nvim README.md
+git add .
+git commit
+git push
+cd Documents/blog/
+git checkout new-homepage
+nvim style.css
+git checkout main
+nvim style.css
+cp style.css main.css
+cp style.css post.css
+cp style.css home.css
+rm style.css
+nvim main.css
+rm post.css
+rm home.css
+nvim build.sh
+mkdir theme
+mv *.html theme/
+ls theme/
+mkdir theme/html
+mv theme/* theme/html/
+mv *.css theme/html/
+ls
+mv theme res
+ls
+mv *.gmi res/gmi/
+mkdir res/gmi
+mv *.gmi res/gmi/
+ls
+rm domain.txt
+mv robots.txt res
+ls
+nvim build.sh
+./build.sh
+nvim build.sh
+./build.sh
+nvim build.sh
+./build.sh
+nvim build.sh
+./build.sh
+nvim build.sh
+./build.sh
+nvim build.sh
+cd Documents/blog/
+nvim res/html/header.html
+nvim res/html/header-post.html
+./build.sh
+nvim res/html/header.html
+nvim res/html/footer.html
+nvim res/html/header.html
+./build.sh
+nvim res/html/header.html
+nvim res/html/header-post.html
+nvim build.sh
+./build.sh
+touch res/html/home.css
+touch res/html/post.css
+./build.sh
+cp res/html/main.css res/html/home.css
+cp res/html/main.css res/html/post.css
+cd Documents/blog/
+nvim res/html/main.css
+nvim res/html/post.css
+nvim res/html/post.css
+./build.sh
+nvim res/html/home.css
+nvim res/html/post.css
+./build.sh
+cd Documents/blog/
+./build.sh
+nvim res/html/post.css
+git add .
+git commit
+nvim res/html/header.html
+nvim res/html/header-post.html
+nvim res/html/main.css
+nvim build.sh
+./build.sh
+nvim build.sh
+nvim res/html/header.html
+nvim res/html/footer.html
+./build.sh
+nvim res/html/footer.html
+./build.sh
+nvim res/html/home.css
+nvim build.sh
+./build.sh
+nvim res/html/home.css
+nvim gmi/blog/n.gmi
+./build.sh
+nvim res/html/home.css
+nvim build.sh
+./build.sh
+nvim res/html/home.css
+./build.sh
+nvim build.sh
+./build.sh
+nvim res/html/home.css
+nvim build.sh
+./build.sh
+cd Documents/blog/
+nvim build.sh
+cd Documents/blog/
+./build.sh
+nvim res/html/home.css
+./build.sh
+nvim res/html/post.css
+./build.sh
+nvim res/html/home.css
+nvim res/html/main.css
+./build.sh
+nvim build.sh
+cp . ../blog-theme-refresh
+cp . ../blog-theme-refresh -r
+ls
+nvim res/html/main.css
+./build.sh
+cd Documents/blog/
+nvim res/html/main.css
+./build.sh
+cd Documents/blog/
+./build.sh
+nvim build.sh
+nvim main.css
+nvim res/html/main.css
+./build.sh
+nvim res/html/home.css
+nvim build.sh
+nvim res/html/home.css
+./build.sh
+nvim build.sh
+./build.sh
+nvim res/html/home.css
+nvim build.sh
+./build.sh
+nvim gmi/blog/long.gmi
+./build.sh
+nvim res/html/home.css
+nvim build.sh
+git add .
+git commit
+git push
+git log -1 --pretty="format:%ci" gmi/
+git log -1 --pretty="format:%i" gmi/
+git log -1 --pretty="format:%c" gmi/
+git log -1 --pretty="format:%ci" gmi/
+git log -1 gmi/
+./build.sh
+nvim build.sh
+git log -1 --pretty="format:%ci" gmi/s
+./build.sh
+nvim gmi/blog/f.gmi
+./build.sh
+git log -1 --pretty="format:%ci" gmi/s
+git log -1 --pretty="format:%ci" gmi
+./build.sh
+git log -1 --pretty="format:%ci" gmi
+git log  --pretty="format:%ci" gmi
+git log 1 --pretty="format:%ci" gmi
+git log -0 --pretty="format:%ci" gmi
+git log --pretty="format:%ci" gmi
+git log --pretty="format:%ci" gmi | tail -n 1
+./build.sh
+git log --pretty="format:%ci" gmi/blog/thisissand-hacking.gmi
+date -r gmi/blog/thisissand-hacking.gmi
+^date -r gmi/blog/thisissand-hacking.gmi
+./build.sh
+nvim build.sh
+nvim res/html/home.css
+./build.sh
+nvim build.sh
+git diff
+git add .
+git commit
+git push
+rm gmi/blog/f.gmi
+rm gmi/blog/n.gmi
+nvim gmi/blog/*
+nvim build.sh
+./build.sh
+git add .
+git commit
+git push
+./build.sh
+nvim res/html/home.css
+./build.sh
+cd Documents/blog/
+./build.sh
+nvim build.sh
+git add .
+git commit
+git push
+nvim res/html/home.css
+nvim res/html/post.css
+nvim res/html/post.css
+git add .
+git commit
+git push
+./build.sh
+nvim build.sh
+mv gmi/blog/thisissand-hacking.gmi gmi/blog/01-thisissand-hacking.gmi
+mv gmi/blog/image.gmi gmi/blog/02-thisissand-hacking.gmi
+git add .
+git commit
+cd ..
+cd dead-simple-ssg/
+cp ../blog/build.sh .
+ls
+rm *
+git reset --hard
+ls
+rm dist/ *.html *.gmi style.css
+rm dist/ *.html *.gmi style.css -r
+ls
+rm robots.txt
+cp ../blog/build.sh .
+cp ../blog/res/ . -r
+ls
+./build.sh
+nvim gmi/blog/test.gmi
+./build.sh
+git diff
+git commit
+ls res/
+git add .
+git commit
+ls res/
+git add .
+git commit
+git log
+git commit
+nvim res/html/post.css
+nvim res/html/main.css
+nvim res/html/post.css
+./build.sh
+cd Documents/blog/
+./build.sh
+nvim res/html/post.css
+nvim res/html/main.css
+nvim res/html/post.css
+nvim res/html/main.css
+./build.sh
+cp ../blog/res/ . -r
+git diff
+git add .
+git commit
+git add .
+git commit
+git push
+git push
+git log
+git commit --amend
+git push
+git push --help
+git push --force
+nvim res/html/post.css
+cd Documents/blog/
+nvim res/html/home.css
+./build.sh
+git add .
+git commit
+cd ..
+cd dead-simple-ssg/
+cp ../blog/res/ . -r
+git add .
+git commit
+git push
+cd
+cd Documents/blog/
+git diff
+git log
+git push
+git log
+nvim res/html/main.css
+nvim res/html/post.css
+nvim res/html/home.css
+^sort -h
+^sort --help
+^sort --help | grep rev
+nvim build.sh
+./build.sh
+cd gmi/blog/
+ls
+mv `02-thisissand-hacking.gmi` `03-thisissand-hacking.gmi`
+mv test.gmi `02-test.gmi`
+ls
+cd ..
+./build.sh
+git add .
+git commit
+cd ..
+cd dead-simple-ssg/
+cp ../blog/build.sh .
+git add .
+git commit
+git push
+cd ..
+cd blog/
+git push
+dig https://ssg-1cm.pages.dev/
+dig ssg-1cm.pages.dev
+paru
+sudo nano /etc/modprobe.d/i915.conf
+paru
+gsettings get org.gnome.desktop.input-sources sources
+nvim .config/hypr/hyprland.conf
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled false
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled true
+hyprctl inputs
+hyprctl sensors
+hyprctl devices
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled false
+Hyprland
+nvim .config/hypr/hyprland.conf
+Hyprland
+hyprctl devices
+squeekboard 
+Hyprland | grep Tablet
+pkill Hypr
+squeekboard 
+sudo reboot
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled true
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled false
+paru gnome-control
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled true
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled false
+sudo systemctl stop waydroid-container
+paru wl-gamma
+nmcli conn up TCIS-NET
+ip link
+sudo dmesg | grep -i err
+sudo dmesg | grep -i iwl
+sudo rmmod iwlwifi iwlmvm
+sudo modprobe iwlwifi
+sudo dmesg | grep -i iwl
+ip link
+paru wl-gamma
+wl-gammactl 
+wl-gammactl -h
+sudo wl-gammactl 
+wl-gammactl 
+paru -R wl-gammactl
+wlsunset -h
+wlsunset -g 2
+nvim .config/hypr/hyprland.conf
+pkill wlsunset
+paru squeekboard
+gnome-control-center 
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled false
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled true
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled false
+gnome-control-center 
+paru squeekboard
+gnome-control-center 
+paru squeekboard
+paru -R squeekboard
+paru -R squeekboard-git
+paru squeekboard
+pkill squeekboard
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled true
+gnome-control-center 
+gnome-control-center -h
+gnome-control-center --help-all
+squeekboard 
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled false
+flatpak update
+paru intel
+paru -S blender
+paru intel-level-zero
+paru intel level
+paru
+paru -S irqbalance
+irqbalance 
+irqbalance -h
+irqbalance -f
+sudo irqbalance -f
+sudo irqbalance -f -d
+systemctl status irqbalance
+sudo systemctl start irqbalance
+systemctl status irqbalance
+sudo powertop
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+rm .cache/mesa_shader_cache/ -r
+firefox -h
+firefox -h | grep conf
+firefox -h | grep deb
+nvim .mozilla/firefox/kfdq988o.default-release/prefs.js
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+sudo systemctl enable irqbalance
+sudo systemctl restart irqbalance
+top
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+htop
+top
+cat /sys/bus/cpu/devices/cpu0/hotplug/state
+cat /sys/class/thermal/cooling_device13/cur_state
+cat /sys/class/hwmon/hwmon0/name
+cat /sys/class/hwmon/hwmon1/name
+se
+sensors
+sudo powertop
+paru blktrace
+sudo blktrace
+sudo blktrace -d /dev/nvme0
+sudo blktrace -d /dev/nvme0n1
+sudo blktrace -d /dev/mapper/luks-5a5c37aa-7129-437e-b7e3-8597f8ba0021
+sudo rmmod intel_lpss_pci
+modinfo intel_lpss_pci
+sudo rmmod intel_lpss_pci
+lsmod | grep lpss
+sudo rmmod intel_lpss_pci
+sudo rmmod intel_lpss
+sudo rmmod intel_lpss_pci
+sudo systemctl restart irqbalance
+sudo systemctl status irqbalance
+paru
+ssh ssh.opcc.tk
+ssh ssh.opcc.tk -L 1488:localhost:1488
+ssh ssh.opcc.tk
+modinfo i915
+modinfo iwlmvm
+sudo nano /etc/modprobe.d/iwlwifi.conf
+sudo ls /etc/modprobe.d/
+sudo nano /etc/modprobe.d/iwlwifi.conf
+sudo nano /etc/modprobe.d/i915.conf
+sudo nano /etc/modprobe.d/iwlwifi.conf
+modinfo iwlwifi
+sudo nano /etc/modprobe.d/iwlwifi.conf
+lsmod | grep nvme
+modinfo nvme
+modinfo nvme_core
+sudo dmesg | grep -i apst
+sudo dmesg | grep -i aspm
+sudo dmesg | head
+sudo dmesg
+modinfo nvme_core
+modinfo nvme
+lsmod | grep nvme
+lsmod | grep surface
+modinfo surface_battery
+modinfo surface_charger
+modinfo surface_platform_profile
+paru surface
+paru surface-control
+surface 
+surface dgpu
+surface dgpu id
+surface status
+surface profile
+surface profile list
+surface profile get
+sudo rmmod iwlmvm iwlwifi
+sudo modprobe iwlwifi
+nmcli conn up TCIS-NET
+sudo powertop
+systemctl poweroff
+sudo nano /etc/modprobe.d/i915.conf
+hyprctl monitors
+systemctl poweroff
+htop
+nmcli conn up TCIS-NET
+nmcli conn up OCSB
+paru
+flatpak update
+top
+flatpak update
+sudo nano /etc/modprobe.d/i915.conf
+systemctl reboot
+cat /etc/chrony.conf
+paru
+sudo nano /etc/makepkg.conf
+paru
+sudo nano /etc/modprobe.d/i915.conf
+paru -S google-chrome
+paru -S apparmor
+apparmor_status 
+aa-status 
+aa-status
+systemctl status apparmor
+sudo systemctl start apparmor
+sudo systemctl enable apparmor
+systemctl status apparmor
+aa-status
+aa-enforce 
+aa-enabled 
+aa-exec 
+systemctl reboot
+flatpak uninstall chrome
+paru ipu6
+git clone https://github.com/intel/icamerasrc/tree/icamerasrc_slim_api
+git clone https://github.com/intel/icamerasrc -b icamerasrc_slim_api
+cd icamerasrc/
+./autogen.sh
+make -j12
+let-env CC = "gcc"
+let-env CXX = "g++"
+make clean
+make -j12
+paru -R ipu6-camera-hal
+paru -R ipu6*
+paru -R ipu6\*
+paru -R ipu6
+paru ipu6
+paru -R intel-ipu6ep-camera-hal-git
+paru -R intel-ipu6ep-camera-hal-git icamerasrc-git
+cd
+bash
+paru -S  icamerasrc-git  intel-ipu6ep-camera-hal-git  ipu6ep-camera-bin ivsc-firmware
+paru ipu6
+mkdir intel-ipu6-dkms.git
+mkdir intel-ipu6-dkms-git
+ca intel-ipu6-dkms-git
+cd intel-ipu6-dkms-git
+nvim PKGBUILD
+makepkg -i
+cd
+cd intel-ivsc-driver-dkms-git
+mkdir intel-ivsc-driver-dkms-git
+cd intel-ivsc-driver-dkms-git
+nvim PKGBUILD
+makepkg -i
+bash
+cat /sys/firmware/acpi/tables/DSDT
+sudo cat /sys/firmware/acpi/tables/DSDT
+sudo cat /sys/firmware/acpi/tables/DSDT | strings
+sudo cat /sys/firmware/acpi/tables/DSDT | strings | grep -i cam
+sudo cat /sys/firmware/acpi/tables/DSDT | strings | grep -i ipu
+sudo cat /sys/firmware/acpi/tables/DSDT | strings | grep -i cam
+sudo cat /sys/firmware/acpi/tables/DSDT | strings | grep -i ov
+sudo cat /sys/firmware/acpi/tables/DSDT | save DSDT.dsl
+iasl
+paru -S iasl
+iasl
+iasl -d DSDT.dsl
+sudo nano /etc/modprobe.d/i915.conf
+modinfo i915
+sudo nano /etc/modprobe.d/i915.conf
+modinfo i915 | grep sel
+sudo nano /etc/modprobe.d/i915.conf
+mount
+sudo blkid
+lsblk
+mount
+mount | grep p5
+mount | grep p6
+sudo fdisk /dev/nvme0n1
+lsblk
+sudo fdisk /dev/nvme0n1
+sudo mkfs.ext4 /dev/nvme0n1p5
+sudo mount /dev/nvme0n1p5 /mnt
+cd Downloads/brunch_r111_stable_20230414/
+ls
+./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros.img -s 64G
+paru -S cgpt
+./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros.img -s 64G
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros.img -s 64G
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros.img -s 64
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros.img -s 58
+sudo cat /etc/grub.d/40_custom /mnt//cros.img.grub.txt | sudo tee /etc/grub.d/99_brunch; sudo chmod 0755 /etc/grub.d/99_brunch; sudo grub-mkconfig -o /boot/grub/grub.cfg
+paru -S grub
+paru -R grub
+paru -S grub
+sudo grub-install /boot/efi
+sudo fdisk /dev/nvme0n1
+sudo mkfs.ext4 /dev/nvme0n1p6
+sudo mkfs.fat /dev/nvme0n1p5
+sudo umount /mnt
+sudo mkfs.fat /dev/nvme0n1p5
+sudo mkfs.ext4 /dev/nvme0n1p6
+sudo mount /dev/nvme0n1p6 /mnt
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros.img -s 58
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros.img -s 57
+sudo umount /mnt
+sudo umount /mnt -f
+sudo umount /mnt -fl
+sudo mount /dev/nvme0n1p6 /mnt
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros.img -s 57
+sudo cat /etc/grub.d/40_custom /mnt//cros.img.grub.txt | sudo tee /etc/grub.d/99_brunch; sudo chmod 0755 /etc/grub.d/99_brunch; sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo umount /mnt
+sudo mkdir /mnt/cros
+sudo mkdir /mnt/esp
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo mount /dev/nvme0n1p5 /mnt/esp/
+sudo grub-install /mnt/esp/
+sudo grub-install -h
+sudo grub-install --help
+sudo mount /dev/nvme0n1p5 sudo cat /etc/grub.d/40_custom /mnt//cros.img.grub.txt | sudo tee /etc/grub.d/99_brunch; sudo chmod 0755 /etc/grub.d/99_brunch; sudo grub-mkconfig -o /boot/grub/grub.cfg/mnt/esp/
+sudo grub-install --boot-directory=/mnt/esp/
+sudo grub-install --boot-directory=/mnt/esp/grub --efi-directory=/mnt/esp
+sudo rm /mnt/esp/grub/ -rf
+sudo grub-install --boot-directory=/mnt/esp/
+sudo fdisk /dev/nvme0n1
+sudo grub-install --boot-directory=/mnt/esp/
+sudo grub-install --boot-directory=/mnt/esp --efi-directory=/mnt/esp
+sudo mount /dev/nvme0n1p5 sudo cat /etc/grub.d/40_custom /mnt//cros.img.grub.txt | sudo tee /etc/grub.d/99_brunch; sudo chmod 0755 /etc/grub.d/99_brunch; sudo grub-mkconfig -o /mnt/esp/grub/grub.cfg
+sudo cat /etc/grub.d/40_custom /mnt//cros.img.grub.txt | sudo tee /etc/grub.d/99_brunch; sudo chmod 0755 /etc/grub.d/99_brunch; sudo grub-mkconfig -o /mnt/esp/grub/grub.cfg
+sudo cat /etc/grub.d/40_custom /mnt/cros/cros.img.grub.txt | sudo tee /etc/grub.d/99_brunch; sudo chmod 0755 /etc/grub.d/99_brunch; sudo grub-mkconfig -o /mnt/esp/grub/grub.cfg
+sudo mount /dev/nvme0n1p5 /mnt/esp/
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+ls /mnt/esp/
+ls /mnt/cros/
+ls /mnt/esp/EFI/
+ls /mnt/esp/EFI/manjaro/
+sudo mkdir /mnt/esp/EFI/BOOT
+sudo cp /mnt/esp/EFI/manjaro/grubx64.efi /mnt/esp/EFI/BOOT/BOOTX64.EFI
+sudo efibootmgr 
+sudo efibootmgr -h
+sudo efibootmgr -c -d /dev/nvme0n1 -p 5
+sudo efibootmgr -c -d /dev/nvme0n1 -p 5 -l "\EFI\BOOT\BOOTX64.EFI"
+sudo efibootmgr -c -d /dev/nvme0n1 -p 5 -l '\EFI\BOOT\BOOTX64.EFI'
+sudo fdisk /dev/nvme0n1
+sudo efibootmgr -C -d /dev/nvme0n1 -p 5 -l '\EFI\BOOT\BOOTX64.EFI'
+sudo efibootmgr -C -d /dev/nvme0n1 -p 5 -l '\EFI\BOOT\BOOTX64.EFI' -L "Grub"
+paru -S efibootmgr
+paru efibootmgr
+sudo efibootmgr -C -d /dev/nvme0n1 -p 5 -l '\EFI\BOOT\BOOTX64.EFI' -L "Grub"
+sudo efibootmgr -v
+sudo efibootmgr -C -d /dev/nvme0n1 -p 5 -l '\EFI\BOOT\BOOTX64.EFI' -L "Grub"
+sudo efibootmgr -C -p 5 -l '\EFI\BOOT\BOOTX64.EFI' -L "Grub"
+sudo efibootmgr -C -d /dev/nvme0n1 -p 5 -l '\EFI\BOOT\BOOTX64.EFI' -L "Grub"
+sudo efibootmgr -C -d /dev/nvme0n1p5 -p 5 -l '\EFI\BOOT\BOOTX64.EFI' -L "Grub"
+sudo efibootmgr -c -b 0006 -d /dev/nvme0n1p5 -p 5 -l '\EFI\BOOT\BOOTX64.EFI' -L "Grub"
+sudo efibootmgr -v
+sudo efibootmgr
+sudo efibootmgr -c -b 0006 -d /dev/nvme0n1p5 -p 5 -l '\EFI\BOOT\BOOTX64.EFI' -L "Grub" -v
+sudo blkid
+sudo umount /mnt/esp/
+sudo mkfs.fat -F32 /dev/nvme0n1p5
+sudo mount /dev/nvme0n1p5 /mnt/esp/
+sudo mount /dev/nvme0n1p6
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo cat /etc/grub.d/40_custom /mnt/cros/cros.img.grub.txt | sudo tee /etc/grub.d/99_brunch; sudo chmod 0755 /etc/grub.d/99_brunch; sudo grub-mkconfig -o /mnt/esp/grub/grub.cfg
+sudo grub-install --boot-directory=/mnt/esp --efi-directory=/mnt/esp
+sudo cat /etc/grub.d/40_custom /mnt/cros/cros.img.grub.txt | sudo tee /etc/grub.d/99_brunch; sudo chmod 0755 /etc/grub.d/99_brunch; sudo grub-mkconfig -o /mnt/esp/grub/grub.cfg
+sudo efibootmgr -c -b 0006 -d /dev/nvme0n1p5 -p 5 -l '\EFI\BOOT\BOOTX64.EFI' -L "Grub" -v
+sudo efibootmgr
+sudo efibootmgr -c -b 0006 -d /dev/nvme0n1p5 -p 5 -l '\EFI\BOOT\BOOTX64.EFI' -L "Grub" -v
+sudo reboot
+sudo efibootmgr -c -b 0006 -d /dev/nvme0n1p5 -p 5 -l '\EFI\BOOT\BOOTX64.EFI' -L "Grub" -v
+sudo efibootmgr -c -d /dev/nvme0n1p5 -p 5 -l '\EFI\BOOT\BOOTX64.EFI' -L "Grub" -v
+sudo efibootmgr
+sudo blkid
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo mount /dev/nvme0n1p5 /mnt/esp/
+ls /mnt/esp/EFI/manjaro/
+ls /mnt/esp/EFI/
+sudo efibootmgr -c -d /dev/nvme0n1p5 -p 5 -l '\EFI\manjaro/grubx64.efi' -L "Grub" -v
+sudo efibootmgr
+sudo efibootmgr -c -d /dev/nvme0n1p5 -p 5 -l '\EFI\manjaro\grubx64.efi' -L "Grub"
+sudo efibootmgr
+sudo efibootmgr -c -d /dev/nvme0n1p5 -p 5 -l '\EFI\manjaro\grubx64.efi' -L "Grub"
+sudo efibootmgr -c -d /dev/nvme0n1p5 -p 5 -l '\EFI\manjaro\grubx64.efi' -L "CrOS"
+sudo efibootmgr
+sudo cp Downloads/Shell.efi /boot/efi/shellx64.efi
+rm ipu6-* -r
+rm icamerasrc-1.0.0-mtl-alpha/ -r
+df -h
+git clone https://github.com/sebanc/brunch -b r111
+git clone https://github.com/sebanc/brunch -b r111 --single-branch --shallow
+git clone https://github.com/sebanc/brunch -b r111 --single-branch --depth 1
+cd brunch/
+ls
+cd
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup
+sudo losetup -h
+sudo losetup -f /mnt/cros/cros.img
+ls /dev/loop0
+sudo mkdir /mnt/brunch
+sudo partprobe /dev/loop0
+sudo blkid
+sudo mount /dev/loop0p6 /mnt/brunch/
+sudo mount /dev/loop0p12 /mnt/brunch/
+ls /mnt/brunch/
+sudo umount /mnt/brunch/
+sudo mount /dev/loop0p11 /mnt/brunch/
+sudo fdisk /dev/loop0
+sudo mount /dev/loop0p5 /mnt/brunch/
+sudo mount /dev/loop0p1 /mnt/brunch/
+ls /mnt/brunch/
+sudo umount /mnt/brunch/
+sudo mount /dev/loop0p1 /mnt/brunch/
+ls /mnt/brunch/brunch/
+sudo umount /mnt/brunch/
+sudo mount /dev/loop0p8 /mnt/brunch/
+ls /mnt/brunch/
+sudo umount /mnt/brunch/
+sudo mount /dev/loop0p7 /mnt/brunch/
+ls /mnt/brunch/
+ls /mnt/brunch/options
+sudo nano /mnt/brunch/options
+ls /mnt/brunch/options
+sudo nano /mnt/brunch/options
+sudo umount /mnt/brunch/
+sudo losetup -d /dev/loop0
+cd Downloads/brunch_r111_unstable_20230414/
+ls
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros.img -s 57
+sudo rm /mnt/cros/cros.img
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros.img -s 57
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros/cros.img -s 57
+sudo mount /dev/loop0p7 /mnt/brunch/
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p7 /mnt/brunch/
+sudo mount /dev/loop1p7 /mnt/brunch/
+sudo partprobe /dev/loop1
+sudo mount /dev/loop1p7 /mnt/brunch/
+sudo losetup -f /mnt/cros/cros.img
+sudo mount /dev/loop0p7 /mnt/brunch/
+sudo mount /dev/loop1p7 /mnt/brunch/
+sudo partprobe /dev/loop1
+sudo mount /dev/loop1p7 /mnt/brunch/
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p7 /mnt/brunch/
+ls /mnt/brunch/
+sudo nano /mnt/brunch/options
+cat /mnt/brunch/initramfs.img | strings
+cat /mnt/brunch/initramfs.img | strings | grep ithc
+cat /mnt/brunch/initramfs.img | strings | grep touch
+cat /mnt/brunch/initramfs.img | binwalk
+paru -S binwalk
+cat /mnt/brunch/initramfs.img | binwalk
+binwalk /mnt/brunch/initramfs.img
+cat /mnt/brunch/initramfs.img | gzip -d | strings
+cat /mnt/brunch/initramfs.img | gzip -d | strings | grep ithc
+cat /mnt/brunch/initramfs.img | gzip -d | strings | grep options_
+ls /mnt/brunch/
+sudo nano /mnt/brunch/kernel
+readlink /mnt/brunch/kernel
+sudo ln -s kernel-6.1 /mnt/brunch/kernel
+readlink /mnt/brunch/kernel
+sudo rm /mnt/brunch/kernel
+sudo ln -s kernel-6.1 /mnt/brunch/kernel
+readlink /mnt/brunch/kernel
+sudo umount /mnt/brunch/
+sudo losetup -d /dev/loop0
+sudo umount /mnt/cros/
+sync
+systemctl reboot
+google-chrome-stable 
+sudo mount /dev/loop0p7 /mnt/brunch/
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p7 /mnt/brunch/
+ls /mnt/brunch/
+sudo nano /mnt/brunch/kernel
+readlink /mnt/brunch/kernel
+sudo nano /mnt/brunch/options
+cat /mnt/brunch/initramfs.img | gzip -d | strings | grep options_
+lsmod | grep ipts
+lsmod | grep it
+sudo nano /mnt/brunch/options
+ls /mnt/brunch/
+sudo nano /mnt/brunch/debug
+cat /mnt/brunch/initramfs.img | gzip -d | strings | grep surface
+cat /mnt/brunch/initramfs.img | gzip -d | strings | grep _hid
+sudo reboot
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p7 /mnt/brunch/
+sudo mount /dev/loop0p12 /mnt/esp/
+ld /mnt/esp/
+ld /mnt/
+ls /mnt/
+ls /mnt/esp/
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo reboot
+sudo mount /dev/loop0p7 /mnt/brunch/
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p12 /mnt/esp/
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo mount /dev/loop0p7 /mnt/brunch/
+cat /mnt/brunch/initramfs.img | gzip -d | strings | grep _hid
+cat /mnt/brunch/initramfs.img | gzip -d | strings | grep options
+cat /mnt/brunch/initramfs.img | gzip -d | strings | grep options_p
+sudo nano /mnt/esp/efi/boot/settings.cfg
+cat /mnt/brunch/initramfs.img | gzip -d | strings | grep touch
+sudo nano /mnt/esp/efi/boot/settings.cfg
+systemctl reboot
+lsmod | grep it
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p7 /mnt/brunch/
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo mount /dev/loop0p12 /mnt/esp/
+sudo modprobe ipts
+lsmod | grep it
+lsmod | grep ip
+lsmod | grep ipts
+sudo rmmod ipts
+sudo rmmod ithc
+sudo modprobe ithc
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo rmmod itch
+sudo rmmod ithc
+sudo modprobe ithc poll=1
+sudo poweroff
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p12 /mnt/esp/
+sudo mount /dev/loop0p7 /mnt/brunch/
+ls /mnt/brunch/patches/
+sudo nano /mnt/brunch/patches/99-ithc.sh
+sudo nano /mnt/brunch/patches/99-ipts.sh
+sudo nano /mnt/brunch/patches/99-ithc.sh
+cat /mnt/brunch/options
+sudo nano /mnt/brunch/patches/99-ithc.sh
+modinfo ipts
+modinfo ithc
+sudo nano /mnt/brunch/patches/99-ithc.sh
+grep -Hi hid /mnt/brunch/patches/*
+grep -Hi surface_hid /mnt/brunch/patches/*
+sudo mkdir /mnt/roota
+sudo blkid
+sudo mount /dev/loop0p5 /mnt/roota/
+sudo mount /dev/loop0p5 /mnt/roota/ -o ro
+ls /mnt/roota/
+find /mnt/roota/ -name '*ipts*'
+^find /mnt/roota/ -name '*ipts*'
+sudo ^find /mnt/roota/ -name '*ipts*'
+sudo find /mnt/roota/ -name '*ipts*'
+sudo find /mnt/roota/ -name '*iptsd*'
+sudo find /mnt/roota/ -name '*surface*'
+sudo nano /mnt/brunch/patches/99-ithc.sh
+sudo nano /mnt/brunch/packages/
+ls /mnt/brunch/packages/
+sudo nano /mnt/brunch/patches/99-ithc.sh
+cat /mnt/roota/etc/init/ipts
+sudo nano /mnt/brunch/patches/99-ithc.sh
+cat /mnt/roota/etc/init/ipts.conf
+sudo nano /mnt/brunch/patches/99-ithc.sh
+ls /lib/firmware/intel/ipu6ep_fw.bin
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo reboot
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo mount /dev/loop0p5 /mnt/roota/ -o ro
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p5 /mnt/roota/ -o ro
+ls /mnt/roota/etc/init/
+ls /mnt/roota/etc/init/*ipt*
+ls /mnt/roota/etc/init/*ip*
+sudo mount /dev/loop0p7 /mnt/brunch/
+sudo nano /mnt/brunch/patches/99-ithc.sh
+sudo nano /mnt/brunch/patches/99-ipts.sh
+sudo nano /mnt/brunch/patches/99-ithc.sh
+tar tvf /mnt/brunch/packages/ithc.tar.gz
+ls /usr/share/iptsd
+sudo nano /mnt/brunch/patches/99-ithc.sh
+sudo mount /dev/loop0p12 /mnt/esp/
+sudo nano /mnt/esp/efi/boot/settings.cfg
+tar tvf /mnt/brunch/packages/kernel-6.1.21-brunch-sebanc.tar.gz
+tar tvf /mnt/brunch/packages/kernel-6.1.21-brunch-sebanc.tar.gz | grep ipts
+tar tvf /mnt/brunch/packages/kernel-6.1.21-brunch-sebanc.tar.gz | grep surface_hid
+tar tvf /mnt/brunch/packages/kernel-6.1.21-brunch-sebanc.tar.gz | grep surface
+lsmod | grep hid
+tar tvf /mnt/brunch/packages/kernel-6.1.21-chromebook-brunch-sebanc.tar.gz | grep surface
+tar tvf /mnt/brunch/packages/kernel-6.1.21-chromebook-brunch-sebanc.tar.gz | grep surface_hid
+tar tvf /mnt/brunch/packages/* | grep surface_hid
+tar tvf /mnt/brunch/packages/ipts.tar.gz | grep surface_hid
+wget https://tinyurl.com/chrome-nspect
+sudo nano /mnt/brunch/patches/99-ithc.sh
+systemctl reboot
+git clone git@github.com:peter-marshall5/brunch-unstable.git
+ls
+cd brunch-unstable/
+ls
+./build_brunch.sh
+sudo ./build_brunch.sh
+cd
+rm brunch/ -r
+git clone https://github.com/sebanc/brunch.git -b 111
+git clone https://github.com/sebanc/brunch.git -b r111
+paru -S baobab
+sudo rm /usr/share/waydroid-extra/ -rf
+waydroid
+waydroid =h
+waydroid -h
+paru -R waydroid
+paru -Rc waydroid
+rm Downloads/SurfacePro9_Win11_22621_22.101.15506.0.msi
+rm Downloads/brunch*
+rm .cache/paru/ -rf
+sudo rm .cache/paru/ -rf
+rm Downloads/brunch* -r
+rm .local/share/Trash/files/ -rf
+rm linux-veyron-alpine/ -rf
+df -h
+git clone https://github.com/sebanc/brunch.git -b r111
+ls brunch/
+cd brunch
+^find -name '*kernel*'
+nvim prepare_kernels.sh
+systemctl reboot
+cd brunch-unstable/
+nvim prepare_kernels.sh
+./prepare_kernels.sh
+nvim prepare_kernels.sh
+./prepare_kernels.sh
+nvim prepare_kernels.sh
+./prepare_kernels.sh
+nvim prepare_kernels.sh
+./prepare_kernels.sh
+nvim prepare_kernels.sh
+ls kernels/
+nvim prepare_kernels.sh
+./prepare_kernels.sh
+ls kernels/
+nvim prepare_kernels.sh
+ls kernels/
+./prepare_kernels.sh
+nvim prepare_kernels.sh
+git reset --hard
+nvim prepare_kernels.sh
+./prepare_kernels.sh
+git reset --hard
+ls packages/
+ls
+ls kernel-patches/
+nvim prepare_kernels.sh
+ls kernel-patches/
+ls kernel-patches/6.1/
+nvim prepare_kernels.sh
+nvim build_kernels.sh
+nvim prepare_kernels.sh
+./prepare_kernels.sh
+nvim prepare_kernels.sh
+ls kernels/
+rm kernels -rf
+ls kernels/
+./prepare_kernels.sh
+git reset --hard
+./prepare_kernels.sh
+nvim prepare_kernels.sh
+cd brunch-unstable/
+./prepare_kernels.sh
+nvim prepare_kernels.sh
+rm kernels -rf
+./prepare_kernels.sh
+rm kernel-patches/chromebook-6.1/base/amdgpu_revert.patch
+./prepare_kernels.sh
+rm kernels -rf
+./prepare_kernels.sh
+rm kernel-patches/chromebook-6.1/base/ -r
+./prepare_kernels.sh
+rm kernels/chromebook-6.1/ -r
+./prepare_kernels.sh
+rm kernels/chromebook-6.1/ -r
+./prepare_kernels.sh
+nvim prepare_kernels.sh
+git reset --hard
+ls kernel-patches/
+ls kernel-patches/6.1/
+nvim prepare_kernels.sh
+cd kernel-patches/6.1/
+ls
+ls surface_go_devices/
+ls surface_mwifiex_pcie_devices/
+ls surface_np3_devices/
+mkdir surface_linux_patches
+cd surface_linux_patches/
+rm ../surface_go_devices/ -r
+rm ../surface_mwifiex_pcie_devices/ -r
+rm ../surface_np3_devices/ -r
+ls
+git clone https://github.com/linux-surface/linux-surface.git --depth 1
+cp ~/linux-surface/patches/6.1/* .
+./prepare_kernels.sh
+cd ..
+nvim prepare_kernels.sh
+rm kernels -rf
+./prepare_kernels.sh
+ls kernels/
+ls kernels/6.1/
+ls kernels/6.1/rust/
+./build_kernels.sh
+nvim build_kernels.sh
+rm kernels/chromebook-6.1/ -
+rm kernels/chromebook-6.1/ -r
+nvim build_brunch.sh
+./build_kernels.sh
+./build_brunch.sh
+sudo ./build_brunch.sh
+rm rootfs/
+cat rootfs/README.md
+sudo ./build_brunch.sh
+nvim build_kernels.sh
+sudo ./build_brunch.sh
+sudo ./build_brunch.sh skip
+sudo ./build_brunch.sh
+sudo ./build_brunch.sh skip
+sudo ./build_brunch.sh ~/Downloads/chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin
+cd external-drivers/
+ls
+ls ipts/
+ls ithc/
+cd ..
+cd brunch-unstable/
+./build_brunch.sh
+df -h
+sudo ./build_brunch.sh ~/Downloads/chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin
+ls
+ls rootfs/
+ls out/
+ls out/brunch_r111_20230418.tar.gz
+cd ~/Downloads/brunch_r111_20230418/
+ls
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+ls /mnt/cros/
+cd brunch-unstable/
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros/cros.img -s 57
+nvim kernels/6.1/chromeos/
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p12 /mnt/esp/
+sudo nano /mnt/esp/efi/boot/settings.cfg
+ls /mnt/esp/
+sudo mount /dev/loop0p7 /mnt/brunch/
+ls /mnt/brunch/
+cd brunch-unstable/
+nvim build_kernels.sh
+nvim prepare_kernels.sh
+nvim kernels/6.1/out/.config
+ls /mnt/brunch/packages/kernel-6.1.21-brunch-sebanc.tar.gz
+./build_kernels.sh
+ls kernels/6.1/out/
+nvim build_brunch.sh
+./build_brunch.sh
+sudo umount /mnt/brunch/
+sudo umount /mnt/esp/
+sudo ./build_brunch.sh ~/Downloads/chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin
+cd Downloads/
+rm brunch_r111_20230418/ -r
+tar xvf ~/brunch-unstable/out/brunch_r111_20230419.tar.gz
+rm rootc.img
+rm efi_*
+rm chromeos-install.sh
+mkdir brunch
+cd brunch/
+tar xvf ~/brunch-unstable/out/brunch_r111_20230419.tar.gz
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros/cros.img -s 57
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+ls /mnt/cros/
+sudo e4defrag /mnt/cros/
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros/cros.img -s 57
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros/cros.img -s 49
+sudo losetup -f /mnt/cros/cros.img
+sudo mount /dev/loop0p12 /mnt/esp/
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo losetup -d /dev/loop0
+sudo umount /mnt/esp/
+sudo mount /dev/loop1p12 /mnt/esp/
+sudo mount /dev/loop2p12 /mnt/esp/
+losetup
+sudo partprobe /dev/loop1
+sudo mount /dev/loop1p12 /mnt/esp/
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo umount /mnt/esp/
+sync
+sudo losetup -d /dev/loop1
+nvim kernels/6.1/out/.config
+^find kernels/6.1/out/
+^find kernels/6.1/out/ -name '*surface*'
+^find kernels/6.1/out/ -name '*surface_id*'
+^find kernels/6.1/out/ -name '*surface_hid*'
+sudo reboot
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+ls /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop1
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p12 /mnt/esp/
+sudo mount /dev/loop0p7 /mnt/brunch/
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo rm /mnt/cros/cros.img
+cd Downloads/brunch/
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros/cros.img -s 57
+ls
+lsusb
+ssh ssh.opcc.tk
+ssh ssh.opcc.tk
+paru
+ping 1.1.1.1
+ssh ssh.opcc.tk
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo rm /mnt/cros/cros.img
+cd Downloads/
+unzip brunch_r111_custom_20230419.tar.gz
+tar xvf brunch_r111_custom_20230419.tar.gz
+rm rootc.img
+rm brunch/ -r
+cd Downloads/brunch_r111_custom_20230419/
+sudo ./chromeos-install.sh -src ../chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin -dst /mnt/cros/cros.img -s 57
+hyprctl monitors
+cat /proc/cmdline
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p12 /mnt/esp/
+sudo nano /mnt/esp/efi/boot/settings.cfg
+hyprctl monitors
+sudo mount /dev/loop0p12 /mnt/esp/
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p12 /mnt/esp/
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo nano /etc/modprobe.d/i915.conf
+modinfo i915
+modinfo i915 | grep dc
+sudo nano /etc/modprobe.d/i915.conf
+modinfo i915 | grep ssc
+modinfo i915 | grep lvds
+modinfo i915 | grep edp
+sudo nano /etc/modprobe.d/i915.conf
+sudo reboot
+cd Downloads/brunch_r111_custom_20230419/
+ls
+sudo mount /dev/loop0p12 /mnt/esp/
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop0
+sudo dd if=rootc.img of=/dev/loop0p7 bs=16M
+sudo reboot
+sudo losetup -f Downloads/brunch_r111_custom_202304200353/rootc.img
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p7 /mnt/brunch/
+sudo mount /dev/loop0 /mnt/brunch/
+ls /mnt/brunch/
+sudo umount /mnt/brunch/
+sudo mount /dev/loop0 /mnt/plain/
+sudo losetup -f /mnt/cros/cros.img
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop1
+sudo mount /dev/loop0p7 /mnt/brunch/
+sudo mount /dev/loop1p7 /mnt/brunch/
+ls /mnt/brunch/
+ls /mnt/plain/
+ls /mnt/plain/packages/
+sudo cp /mnt/plain/packages/ipts.tar.gz /mnt/brunch/packages/
+sudo nano /mnt/brunch/patches/99-ithc.sh
+sudo cp /mnt/plain/patches/99-ithc.sh /mnt/brunch/patches/
+sudo nano /mnt/brunch/patches/99-ithc.sh
+sudo mount /dev/loop1p12 /mnt/esp/
+cat /proc/cmdline
+sudo nano /etc/modprobe.d/i915.conf
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo reboot
+ls /dev/hidraw*
+lsmod | grep ipts
+lsmod | grep ithc
+lsmod | grep intel
+sudo nano /etc/kernel/install.conf
+cat /etc/mkinitcpio.conf
+lsmod | grep intel
+lsmod | grep ithc
+lsmod | grep ipts
+modinfo ithc
+lsmod | grep ipts
+lsmod | grep mei
+sudo rmmod mei
+sudo rmmod mei_me
+sudo rmmod ithc
+sudo rmmod mei_me
+sudo rmmod mei_pxp
+sudo modprobe ithc
+sudo rmmod mei_pxp
+sudo rmmod mei_hdcp
+lsmod | grep mei
+ln -h
+ln --help
+ln a b
+ls
+ln report.txt b
+cat b
+rm b
+nmcli dev wifi connect OCSB-BYOD --ask
+git clone git@github.com:peter-marshall5/brunch-standalone-packages.git
+cd brunch-standalone-packages/
+./build_brunch.sh
+paru -S wireshark
+paru wireshark
+sudo ./build_brunch.sh ~/Downloads/chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin
+clear
+cd
+paru aircrack-ng
+sudo airmon-ng start wlan0
+sudo wireshark
+xhost +
+sudo airmon-ng start wlan0
+sudo airodump-ng wlan0mon
+sudo airodump-ng wlan0mon -c 11
+sudo wireshark
+cd brunch-standalone-packages/
+nvim build_brunch.sh
+nvim scripts/build-init
+nvim build_brunch.sh
+nvim scripts/build-init
+./build_brunch.sh
+sudo ./build_brunch.sh ~/Downloads/chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin
+sudo airmon-ng stop wlan0mon
+sudo ./build_brunch.sh ~/Downloads/chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin
+nvim scripts/build-init
+sudo ./build_brunch.sh ~/Downloads/chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin
+nvim scripts/build-init
+sudo ./build_brunch.sh ~/Downloads/chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin
+nvim scripts/build-init
+./build_brunch.sh
+sudo ./build_brunch.sh ~/Downloads/chromeos_15329.44.2_brya_recovery_stable-channel_mp-v9.bin
+nvim scripts/build-init
+curl https://github.com/fmtlib/fmt/archive/9.1.0.tar.gz -o fmt.tar.gz
+file fmt.tar.gz
+rm fmt.tar.gz
+curl https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz
+curl https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz -o fmt.tar.gz
+file fmt.tar.gz
+rm fmt.tar.gz
+curl -L https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz
+curl -L https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz -o fmt.tar.gz
+file fmt.tar.gz
+cd brunch-standalone-packages/
+git add .
+sudo rm chroot/ -rf
+git add .
+git commit
+git push
+rm brunch-unstable/ -rf
+sudo rm brunch-unstable/ -rf
+git clone git@github.com:peter-marshall5/brunch-unstable.git
+nvim scripts/build-init
+cd brunch-unstable/
+nvim scripts/build-init
+git add .
+git commit
+git push
+sudo chmod -x /etc/grub.d/10_linux
+sudo mv /etc/grub.d/99_brunch /etc/grub.d/20_brunch
+sudo chmod -x /etc/grub.d/30*
+sudo chmod -x /etc/grub.d/3*
+history | grep grub
+sudo update-grub 
+cd Downloads/brunch_r111_custom_202304202012/
+sudo losetup -f /mnt/cros/cros.img
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo losetup -f rootc.img
+sudo partprobe /dev/loop1
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p7 /mnt/brunch/
+ls /mnt/brunch/
+sudo mount /dev/loop1p7 /mnt/plain/
+sudo mount /dev/loop1 /mnt/plain/
+ls /mnt/plain/
+ls /mnt/plain/packages/
+sudo cp /mnt/plain/packages/ipts.tar.gz /mnt/brunch/packages/
+sudo reboot
+^find /sys | grep edid
+hexdump -h
+hexdump -e
+hexdump -e --help
+hexdump --help
+hexdump /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/edid
+hexdump /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/edid -e '%f'
+hexdump /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/edid -e '%a'
+hexdump /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/edid -e '%F'
+paru -S xxd
+xxd
+xxd /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/edid
+xxd /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/edid -p
+xxd -p /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/edid
+hexdump /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/edid -ve '1/1 "%.2x"'
+hexdump /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/edid -ve '1/1 " %.2x"'
+paru cru
+paru -S parse-edid
+paru parse-edid
+paru read-edid
+sudo get-edid | parse-edid
+sudo get-edid
+cp /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/edid edid.bin
+cat edid.bin | parse-edid
+hexdump /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/edid -ve '1/1 " %.2x"'
+hexdump /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-2/edid -ve '1/1 " %.2x"'
+hexdump /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-1/edid -ve '1/1 " %.2x"'
+hexdump /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-DP-2/edid -ve '1/1 " %.2x"'
+hexdump /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-HDMI-A-1/edid -ve '1/1 " %.2x"'
+hexdump /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/edid -ve '1/1 " %.2x"'
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p3 /mnt/roota/
+ls /mnt/roota/
+sudo cp edid.bin /mnt/roota/lib/firmware/
+sudo mount /dev/loop0p12 /mnt/esp/
+hyprctl monitors
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo reboot
+sudo ls /boot/efi/EFI
+sudo ls /boot/efi/EFI/Manjaro
+sudo ls /boot/efi/EFI/Manjaro/grubx64.efi
+sudo ls /boot/efi/EFI/Manjaro
+sudo ls /boot/efi/EFI/
+sudo ls /boot/efi/EFI/Linux
+sudo blkid
+sudo blkid | grep vfat
+sudo mount /dev/nvme0n1p7 /mnt/esp/
+ls /mnt/esp/
+sudo ls /mnt/esp/
+sudo ls /mnt/esp/EFI
+sudo ls /mnt/esp/EFI/Manjaro
+sudo umount /mnt/esp/
+sudo mount /dev/nvme0n1p5 /mnt/esp/
+sudo ls /mnt/esp/EFI
+sudo ls /mnt/esp/EFI/manjaro
+sudo grub-install --boot-directory=/mnt/esp --efi-directory=/mnt/esp
+sudo reboot
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo pa
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p12 /mnt/esp/
+sudo mount /dev/loop0p7 /mnt/brunch/
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo umount /mnt/esp/
+sudo mount /dev/nvme0n1p5 /mnt/esp/
+ls /mn
+ls /mnt/esp/
+sudo grub-mkconfig -o /mnt/esp/grub/grub.cfg
+sudo reboot
+cat /proc/cmdline
+sudo mount /dev/nvme0n1p5 /mnt/esp/
+sudo nano /mnt/esp/efi/boot/settings.cfg
+ls /mnt/esp/
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo nano /mnt/esp/EFI/boot/settings.cfg
+sudo umount /mnt/esp/
+sudo mount /dev/nvme0n1p7 /mnt/esp/
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo ls /mnt/esp/EFI/manjaro
+sudo ls /mnt/esp/EFI/
+sudo blkid | grep vfat
+sudo umount /mnt/esp/
+sudo mount /dev/nvme0n1p5 /mnt/esp/
+sudo ls /mnt/esp/EFI/
+sudo umount /mnt/esp/
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p12 /mnt/esp/
+sudo nano 
+sudo nano /mnt/esp/efi/boot/settings.cfg
+sudo reboot
+cat /proc/config.gz | gzip -d | grep -i hotplug
+cat /proc/config.gz | gzip -d | grep -i teo
+cat /proc/config.gz | gzip -d | grep -i sched
+cat /proc/config.gz | gzip -d | grep -i class
+cat /proc/config.gz | gzip -d | grep -i hz
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop0
+sudo mount /dev/loop0p7 /mnt/brunch/
+binwalk /mnt/brunch/kernel-6.1
+cat /mnt/brunch/kernel-6.1 | dd bs=16909 skip=1
+clear
+cat /mnt/brunch/kernel-6.1 | dd bs=16909 skip=1 | gzip -d | grep config
+cat /mnt/brunch/kernel-6.1 | dd bs=16909 seek=1 | gzip -d | grep config
+cat /mnt/brunch/kernel-6.1 | dd bs=16909 skip=1 | gzip -d | grep config
+cat /mnt/brunch/kernel-6.1 | dd bs=1 skip=16096 | gzip -d | grep config
+binwalk /mnt/brunch/kernel-6.1
+cat /mnt/brunch/kernel-6.1 | dd bs=1 skip=16909 | gzip -d | grep config
+cat /mnt/brunch/kernel-6.1 | dd bs=16909 skip=1 | gzip -d | grep config
+binwalk /mnt/brunch/kernel-6.1
+cat /mnt/brunch/kernel-6.1 | dd bs=1 skip=16909 | gzip -d > vmlinuz
+cat /mnt/brunch/kernel-6.1 | dd bs=1 skip=16909 | gzip -d | save vmlinuz
+binwalk vmlinuz
+binwalk /mnt/brunch/initramfs.img
+cat /mnt/brunch/initramfs.img | gzip -d | strings | grep touch
+cat /mnt/brunch/initramfs.img | gzip -d | strings | grep CONFIG
+cat /mnt/brunch/initramfs.img | gzip -d | binwalk
+cat /mnt/brunch/initramfs.img | gzip -d | binwalk -
+cat /mnt/brunch/initramfs.img | gzip -d | save init
+binwalk init
+strings init | grep config
+strings init | grep config.
+strings init | grep config.gz
+rm init
+cat vmlinuz | strings | grep CONFIG_
+cat vmlinuz | strings | grep config.gz
+clear
+binwalk vmlinuz | grep gzip
+ssh ssh.opcc.tk
+sudo reboot
+paru -S qemu
+paru qemu x86
+sudo mount /dev/loop0p7 /mnt/brunch/ -o ro
+sudo mount /dev/nvme0n1p6 /mnt/cros/ -o ro
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop0
+sudo mount /dev/nvme0n1p7 /mnt/brunch/ -o ro
+sudo mount /dev/loop0p7 /mnt/brunch/ -o ro
+sudo mount /dev/loop0p7 /mnt/brunch/
+sudo mount /dev/loop0p7 /mnt/brunch/ -o ro
+sudo dmesg
+sudo mount /dev/loop0p7 /mnt/brunch/ -o ro,noload
+sudo mount /mnt/cros/ -o remount,noload
+qemu-system-x86_64 --enable-kvm /dev/nvme0n1
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1
+xhost +
+paru vnc
+paru -R gtk-vnc
+paru -S tigervnc
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1
+sudo qemu-system-x86_64 --enable-kvm -curses /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1
+sudo qemu-system-x86_64 --curses --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --cmdline "panic=0"
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "panic=0"
+sudo mount /dev/loop0p12 /mnt/efi/ -o ro,noload
+sudo mount /dev/loop0p12 /mnt/esp/ -o ro,noload
+sudo mount /dev/loop0p12 /mnt/esp/ -o ro
+cat /mnt/esp/efi/boot/settings.cfg
+cat /mnt/esp/efi/boot/grub.cfg
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0"
+cat /mnt/esp/efi/boot/grub.cfg
+cat /mnt/esp/efi/boot/grub.cfg | grep root
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0" --initrd
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0" --initrd /mnt/brunch/initramfs.img
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0" --initrd /mnt/brunch/initramfs.img -chardev stdio,id=char0,logfile=serial.log,signal=off \
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0" --initrd /mnt/brunch/initramfs.img -chardev stdio,id=char0,logfile=serial.log,signal=off -serial chardev:char
+cat serial.log
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0" --initrd /mnt/brunch/initramfs.img -chardev stdio,id=char0,logfile=serial.log,signal=off -serial chardev:char -nographic
+sudo qemu-system-x86_64 -nographic --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0" --initrd /mnt/brunch/initramfs.img -chardev stdio,id=char0,logfile=serial.log,signal=off -serial chardev:char
+sudo qemu-system-x86_64 -nographic --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0" --initrd /mnt/brunch/initramfs.img -chardev stdio,id=char0,logfile=serial.log,signal=off -serial stdio
+sudo qemu-system-x86_64 -nographic --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0" --initrd /mnt/brunch/initramfs.img -serial stdio
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0 tty=ttyS0" --initrd /mnt/brunch/initramfs.img -chardev stdio,id=char0,logfile=serial.log,signal=off -serial chardev:char
+cat serial.log
+sudo qemu-system-x86_64 --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0 tty=ttyS0" --initrd /mnt/brunch/initramfs.img -chardev id=char0,logfile=serial.log,signal=off -serial chardev:char
+sudo qemu-system-x86_64 -nographic --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0" --initrd /mnt/brunch/initramfs.img | save serial.log
+sudo qemu-system-x86_64 -nographic --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0 tty=ttyS0" --initrd /mnt/brunch/initramfs.img | save serial.log
+rm serial.log
+cat serial.log
+sudo qemu-system-x86_64 -nographic --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0 console=ttyAMA0,115200 console=tty  highres=off console=ttyS0" --initrd /mnt/brunch/initramfs.img | save serial.log
+sudo qemu-system-x86_64 -nographic -serial mon:stdio --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0 console=ttyAMA0,115200 console=tty highres=off console=ttyS0" --initrd /mnt/brunch/initramfs.img
+sudo qemu-system-x86_64 -nographic -serial null -serial mon:stdio --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0 console=ttyAMA0,115200 console=tty highres=off console=ttyS0" --initrd /mnt/brunch/initramfs.img
+rm serial.log
+cat serial.log
+sudo qemu-system-x86_64 -nographic -serial null -serial mon:stdio --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0 console=ttyAMA0,115200 console=tty highres=off console=ttyS0" --initrd /mnt/brunch/initramfs.img
+sudo qemu-system-x86_64 -nographic -serial mon:stdio --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0 console=ttyAMA0,115200 console=tty highres=off console=ttyS0" --initrd /mnt/brunch/initramfs.img
+rm serial.log
+cat serial.log
+pkill qemu
+sudo pkill qemu
+sudo qemu-system-x86_64 -nographic -serial mon:stdio --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0 console=ttyAMA0,115200 console=tty highres=off console=ttyS0" --initrd /mnt/brunch/initramfs.img | save serial.log
+sudo pkill qemu
+rm serial.log
+cat serial.log
+less serial.log
+cat serial.log
+sudo pkill qemu
+sudo qemu-system-x86_64 -nographic -serial mon:stdio --enable-kvm /dev/nvme0n1 --kernel /mnt/brunch/kernel-6.1 --append "boot=local noresume noswap loglevel=7 cros_secore cros_debug panic=0 console=ttyAMA0,115200 console=tty highres=off console=ttyS0" --initrd /mnt/brunch/initramfs.img | save serial.log
+grep -i err serial.log
+less serial.log
+sudo reboot
+sudo nano /etc/chrony.conf
+sudo systemctl restart chrony
+sudo systemctl restart chronyd
+sudo chronyc tracking
+sudo chronyc rtctracking
+sudo chronyc -h
+sudo chronyc --help
+sudo chronyc help
+sudo chronyc rtcdata
+sudo nano /etc/chrony.conf
+sudo systemctl restart chronyd
+sudo chronyc rtcdata
+sudo chronyc trimrtc
+sudo chronyc rtcdata
+sudo chronyc tracking
+sudo chronyc rtcdata
+nvim .config/hypr/hyprland.conf
+paru
+nvim .config/hypr/hyprland.conf
+paru -S fuzzel
+fuzzel 
+fuzzel -h
+fuzzel -h | grep input
+fuzzel -h | grep touch
+fuzzel
+paru -R fuzzel
+sudo reboot
+nvim .config/hypr/hyprland.conf
+hyprctl setcursor Breeze 24
+hyprctl setcursor Breeze 12
+nvim .config/hypr/hyprland.conf
+paru -R adwaita
+paru adwaita
+paru adwaita-cursor
+paru -R adwaita-cursors
+paru -R adwaita-cursors adwaita-icon-theme
+paru -R adwaita-cursors adwaita-icon-theme gtk3
+pkill Hypr
+sudo poweroff
+paru -S nwg-look
+nwg-look
+nvim .config/hypr/hyprland.conf
+paru -S hyprland
+pkill Hypr
+nvim .config/hypr/hyprland.conf
+paru -S sway
+rofi
+rofi -show drun
+rofi
+rofi -show ssh
+rofi -show drun
+rofi -show drun -h
+rofi -show drun -h | grep touch
+rofi -h | grep touch
+rofi -h | grep mouse
+rofi -h | grep -i mouse
+rofi -h | grep -i mouse -A 5
+rofi -h | grep -i mouse -B 5
+rofi -h | grep -i focus -B 5
+rofi -show drun -no-steal-focus
+rofi -h | grep -i input -B 5
+paru -S wluma
+wluma
+wluma -h
+wluma --help
+sudo systemctl restart iptsd
+systemctl status | grep ipts
+systemctl status | grep iptsd
+systemctl status | grep ipt
+iptsd-find-service 
+sudo systemctl restart iptsd@dev-hidraw5.service
+htop
+paru -S swayfx
+paru -S sway
+sway
+nvim .config/sway/config
+sway
+hyprctl monitors
+nvim .config/sway/config
+ls .config/rofi/
+sway
+footclient 
+alacritty
+pkill Hypr
+nvim .config/sway/config
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled true
+htop
+swaymsg
+swaymsg -h
+swaymsg get_inputs
+swaymsg help
+swaymsg inputs
+nvim .config/sway/config
+swaymsg -t get_inputs
+nvim .config/sway/config
+paru clipman
+paru -S waybar
+pkill sway
+nvim .config/sway/config
+paru -S autotiling
+nvim .config/rofi/config.rasi
+nvim .config/rofi/theme.rasi
+nvim .config/waybar/style.css
+waybar 
+nvim .config/rofi/theme.rasi
+nvim .config/rofi/config.rasi
+nvim .config/sway/config
+nvim .config/rofi/theme.rasi
+wget https://github.com/adi1090x/rofi/raw/master/files/launchers/type-1/style-5.rasi -O .config/rofi/theme.rasi
+nvim .config/rofi/theme.rasi
+mkdir .config/rofi/shared
+wget https://github.com/adi1090x/rofi/raw/master/files/colors/navy.rasi -O .config/rofi/shared/colors.rasi
+nvim .config/rofi/theme.rasi
+nvim .config/rofi/shared/fonts.rasi
+squeekboard 
+nvim .config/rofi/theme.rasi
+.config/rofi/rofi-wifi-menu.sh
+nano .config/waybar/config
+nano .config/waybar/style.css
+ssh ssh.opcc.tk
+flatpak
+flatpak update
+paru
+sudo poweroff
+paru
+sudo systemctl restart iptsd@dev-hidraw5.service
+swaymsg -t get_outputs
+nmcli conn edit OCSB
+nmcli conn up OCSB
+nmcli conn edit OCSB-BYOD
+nmcli conn up OCSB-BYOD
+nmcli conn edit OCSB-BYOD
+nmcli conn up OCSB-BYOD
+flatpak install flathub com.belmoussaoui.Authenticator
+flatpak run com.belmoussaoui.Authenticator
+go install github.com/deletescape/goop@latest
+goop
+pkill sway
+htop
+top
+nvim .config/waybar/style.css
+nvim .config/waybar/config
+pkill Hypr
+paru
+foot
+alacritty
+foot
+alacritty
+nvim .config/sway/config
+modinfo i915
+modinfo i915 | grep edp
+sudo nano /etc/modprobe.d/i915.conf
+modinfo i915 | grep safe
+sudo nano /etc/modprobe.d/i915.conf
+sudo reboot
+sudo poweroff
+sudo nano /etc/modprobe.d/i915.conf
+modinfo i915
+sudo nano /etc/modprobe.d/i915.conf
+cat /proc/cmdline
+sudo nano /etc/modprobe.d/i915.conf
+sudo poweroff
+swaymsg -t get_outputs
+modinfo i915 | grep edp
+modinfo i915
+sudo nano /etc/modprobe.d/i915.conf
+paru
+nvim .config/sway/config
+swaymsg -t get_outputs
+hifiscan 
+paru -S easyeffects
+easyeffects 
+WAYLAND_DISPLAY= easyeffects
+hifiscan 
+WAYLAND_DISPLAY= easyeffects
+sudo reboot
+sudo mount /dev/nvme0n1p7 /mnt/brunch/
+sudo losetup -f /mnt/cros/cros.img
+ls /mnt/brunch/
+sudo ls /mnt/brunch/
+sudo umount /mnt/brunch/
+sudo mount /dev/nvme0n1p6 /mnt/cros/
+sudo losetup -f /mnt/cros/cros.img
+sudo partprobe /dev/loop0
+sudo blkid
+sudo blkid /dev/loop*
+sudo mount /dev/loop0p7 /mnt/brunch/ -o ro,noload
+sudo cp /mnt/brunch/edid.bin .
+sudo umount /mnt/brunch/
+sudo dd if=Downloads/brunch_r111_unstable_20230424/rootc.img of=/dev/loop0p7 bs=16M
+sudo blkid /dev/loop*
+sudo reboot
+wluma
+paru
+paru -Syu
+flatpak update
+nvim .config/sway/config
+sudo poweroff
+paru -S linux63
+sudo reboot
+uname -r
+lsmod | grep surface
+sudo powertop
+sudo modprobe ithc
+sudo modprobe iptsd 
+paru ithc
+sudo modprobe iptsd 
+sudo modprobe ithc
+find /lib/modules/ | grep ithc
+find /lib/modules/6.3.0-1-MANJARO/ | grep ithc
+find /lib/modules/6.3.0-1-MANJARO/ -name '*ithc*'
+find /lib/modules/6.3.0-1-MANJARO/ --name '*ithc*'
+^find /lib/modules/6.3.0-1-MANJARO/ --name '*ithc*'
+^find /lib/modules/6.3.0-1-MANJARO/ -name '*ithc*'
+paru ithc
+git clone https://github.com/quo/ithc-linuxhttps://github.com/quo/ithc-linux
+git clone https://github.com/quo/ithc-linux
+cd ithc-linux/
+ls
+dkms install
+paru -R ithc-dkms-git
+sudo dkms install
+sudo make dkms-install
+paru -S linux63-headers
+sudo dkms install
+sudo dkms add ithc/1.0
+ls
+sudo dkms add -m ithc/1.0
+sudo dkms install
+sudo modprobe configs
+cat /proc/config.gz | gzip -d | grep -i lpss
+sudo nano /etc/tlp.conf
+sudo systemctl restart tlp
+ls
+cd src/
+ls
+sudo dkms install
+sudo dkms add .
+cd ..
+sudo dkms add .
+sudo modprobe ithc
+sudo iptsd_find_hidraw
+sudo iptsd-find-hidraw
+sudo systemctl start iptsd@hidraw5
+sudo dmesg
+sudo systemctl restart iptsd@dev-hidraw5.service
+sudo dmesg
+sudo dmesg | grep ipts
+sudo systemctl status iptsd@dev-hidraw5.service
+sudo rmmod ithc
+sudo modprobe ithc
+sudo systemctl restart iptsd@dev-hidraw5.service
+sudo systemctl status iptsd@dev-hidraw5.service
+cd
+sudo modprobe -r xhci-pci
+nmcli conn up TCIS-NET
+waybar 
+pkill waybar
+waybar 
+nvim .config/waybar/style.css
+waybar 
+nvim .config/waybar/config
+nvim .config/waybar/style.css
+waybar 
+nvim .config/waybar/config
+nvim .config/waybar/style.css
+waybar 
+nvim .config/waybar/config
+nvim .config/waybar/style.css
+waybar 
+nvim .config/waybar/config
+waybar 
+nvim .config/waybar/style.css
+nvim .config/waybar/config
+waybar 
+wa
+waybar 
+nvim .config/waybar/config
+waybar 
+bash
+nvim .config/waybar/config
+nvim .config/waybar/style.css
+nvim .config/sway/config
+nvim .config/sway/matcha-green
+nvim .config/sway/config
+nvim .config/sway/matcha-green
+nvim .config/sway/config
+nvim .config/sway/matcha-green
+man sway
+man sway.conf
+man sway
+nvim .config/sway/matcha-green
+nvim .config/sway/config
+htop
+htop
+ls
+cava
+nvim .config/nushell/config.nu
+paru -S cava
+ssh ssh.opcc.tk
+bash
+cd ..
+cd
+cd Downloads/brunch_r111_custom_202304202012/
+cd
+cd Downloads/brunch_r111_custom_202304202012/
+cd
+cd Documents/blog/
+cd
+cd Documents/blog/
+cd
+ping 1.1.1.1
+cd Documents/blog/
+pwd
+cd
+git clone git@github.com:peter-marshall5/dotfiles.git
+cd dotfiles/
+ls
+ls .config/
+cd
+nvim .config/sway/config
+rm .config/sway/matcha-green
+nvim .config/sway/config.d/README.md
+nvim .config/sway/config.d/XX-keyboard.conf.example
+rm .config/sway/config.d/
+rm .config/sway/config.d/ -r
+rm .config/sway/definitions.d/ -r
+rm .config/sway/help.man
+nvim .config/sway/sway-interactive-screenshot
+.config/sway/sway-interactive-screenshot
+find .config/sway/
+^find .config/sway/
+^find .config/waybar/
+rm .config/waybar/config.old
+^find .config/rofi/
+ls dotfiles/
+ls dotfiles/.config/
+rm dotfiles/.config/sway/ -r
+rm dotfiles/.config/waybar/ -r
+rm dotfiles/.config/nushell/ -r
+rm dotfiles/.config/rofi/ -r
+^cp .config/rofi/ .config/waybar/ .config/sway/ .config/nushell/ dotfiles/.config/

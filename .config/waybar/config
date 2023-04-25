@@ -1,4 +1,4 @@
-// =============================================================================
+/// =============================================================================
 //
 // Waybar configuration
 //
@@ -15,9 +15,10 @@
 
     // If height property would be not present, it'd be calculated dynamically
     "height": 30,
-    "position": "top",
+    "margin": "3 0 0 0",
+    "position": "bottom",
 
-    "modules-left": ["custom/menu", "custom/files", "custom/ssh", "sway/workspaces"],
+    "modules-left": ["custom/menu", "custom/files", "custom/exit", "sway/workspaces"],
     //"modules-center": ["custom/wf-recorder", "sway/mode"],
     //"modules-center": ["clock"],
     "modules-right": [
@@ -73,10 +74,8 @@
         "on-click": "activate",
         "format-icons": {
             "1": " ",
-            "2": " ",
-            "3": "  ",
-            "4": " ",
-            "5": " ",
+            "2": " ",
+            "3": "  ",
             "urgent": " ",
             //"active": " "
             "default": ""
@@ -93,12 +92,12 @@
         //"format-charging": " {capacity}%",
         //"format-full": " 100%",
         "format": "{icon}",
-        "format-charging": "",
+        "format-charging": "{icon} 󰚥",
         "format-full": "",
         "format-icons": ["", "", "", "", "", ""],
         "tooltip": true,
         "tooltip-format": "{capacity}% ({time})",
-        "bat": "sbs-20-000b"
+        "bat": "BAT1"
     },
 
     "custom/powerbar": {
@@ -107,10 +106,9 @@
         "exec": "$HOME/.config/waybar/powerbar -full 'FULL - {usage}W' -charging '{state} {capacity}% - {usage}W - {H}h {M}m' -waybar 2> /dev/null"
     },
 
-    "custom/ssh": {
-        "format": " ",
-        //"format": " ",
-        "on-click": "rofi -show ssh",
+    "custom/exit": {
+        "format": "",
+        "on-click": "kill -2 $(hyprctl activewindow | grep pid | cut -d: -f2)",
         "tooltip": false
     },
 
@@ -152,7 +150,7 @@
 
     "network": {
         "interval": 5,
-        "format-wifi": " ",
+        "format-wifi": "󰖩 ",
         "format-ethernet": "",
         "format-disconnected": "睊",
         "format-disabled": "睊",

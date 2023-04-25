@@ -25,13 +25,14 @@
     min-height: 0;
     margin: 0;
     padding: 0;
-    font-family: "DejaVu";
+    font-family: "Hack";
 }
 
 /* The whole bar */
 #waybar {
-    background: linear-gradient(to bottom, rgba(0,0,0,.90), rgba(0,0,0,.86));
+    background: linear-gradient(transparent 18%, rgba(0, 0, 0, 0.23));
     font-size: 14px;
+    border-radius: 16px;
 }
 
 /* Each module */
@@ -39,7 +40,7 @@
 #custom-menu,
 #custom-help,
 #custom-files,
-#custom-ssh,
+#custom-exit,
 #custom-scratchpad,
 #custom-github,
 #custom-clipboard,
@@ -165,7 +166,7 @@
 #workspaces button,
 #custom-menu,
 #custom-files,
-#custom-ssh {
+#custom-exit {
     color: #cdd;
     margin-right: 4px;
     padding-left: 10px;
@@ -174,7 +175,7 @@
     font-weight: normal;
 }
 
-#custom-ssh {
+#custom-exit {
     margin-right: 7px;
 }
 

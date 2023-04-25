@@ -43,7 +43,7 @@ case $CHOICE in
         grim -g "$FOCUSED" "$EXPENDED_FILENAME"
 	;;
     '')
-        notify-send "Screenshot" "Cancelled"
+        #notify-send "Screenshot" "Cancelled"
         exit 0
         ;;
     *)
@@ -71,4 +71,4 @@ EOF`
 fi
 
 wl-copy < "$EXPENDED_FILENAME"
-notify-send "Screenshot" "File saved as <i>'$FILENAME'</i> and copied to the clipboard." -i "$EXPENDED_FILENAME"
+#notify-send "Screenshot" "File saved as <i>'$FILENAME'</i> and copied to the clipboard." -i "$EXPENDED_FILENAME"
