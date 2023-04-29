@@ -14,11 +14,10 @@
     "layer": "top",
 
     // If height property would be not present, it'd be calculated dynamically
-    "height": 30,
-    "margin": "3 0 0 0",
+    "height": 38,
     "position": "bottom",
 
-    "modules-left": ["custom/menu", "custom/files", "custom/exit", "sway/workspaces"],
+    "modules-left": ["custom/menu", "custom/files", "sway/workspaces"],
     //"modules-center": ["custom/wf-recorder", "sway/mode"],
     //"modules-center": ["clock"],
     "modules-right": [
@@ -114,7 +113,7 @@
 
     "custom/files": {
         "format": " ",
-        "on-click": "rofi -modes drun,run,ssh,filebrowser -show filebrowser",
+        "on-click": "rofi -show filebrowser -theme .config/rofi/config.rasi",
         "tooltip": false
     },
 
@@ -218,7 +217,7 @@
 
     "custom/menu": {
         "format": " ",
-        "on-click": "rofi -show drun -display-drun \"Run\"",
+        "on-click": "rofi -show drun -theme .config/rofi/config.rasi",
         "tooltip": false
     },
 

@@ -30,9 +30,9 @@
 
 /* The whole bar */
 #waybar {
-    background: linear-gradient(transparent 18%, rgba(0, 0, 0, 0.23));
+    background: transparent;
     font-size: 14px;
-    border-radius: 16px;
+    border-radius: 0px;
 }
 
 /* Each module */
@@ -67,10 +67,13 @@
 }
 
 .modules-left, .modules-right {
-    /*margin: 3px;*/
+    margin: 3.3px;
+    background: #0c252b;
+    border-radius: 12px;
 }
 
-.modules-center, .modules-right {
+.modules-left, .modules-right {
+    border: 1.5px solid #44b5b1;
     padding: 3px;
 }
 
@@ -180,7 +183,7 @@
 }
 
 #workspaces button:hover {
-    background: rgba(255, 255, 255, 0.2);
+    /*background: rgba(255, 255, 255, 0.2);*/
 }
 
 #workspaces button.focused {
