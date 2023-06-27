@@ -6,11 +6,32 @@ def create_left_prompt [] {
         ($env.PWD | str substring ($env.HOME | str length)..)
     ] | str join | path basename)
 
-    $" (ansi green_bold)($dir) "
+    if $env.TERM == "linux" {
+      $" ($dir) "
+    } else {
+      $"(ansi bg_green)(ansi xterm_grey7) ($dir) (ansi reset)"
+      #$" (ansi cyan_bold)($dir)(ansi reset) "
+    }
 }
 
 def create_right_prompt [] {
+    if $env.TERM == "linux" {
+      ""
+    }
 
+    let segment_color = $"(ansi light_blue_dimmed)"
+    let duration = (((($env.CMD_DURATION_MS | into int) / 1000 | math round | into string) + "sec") | into duration)
+    let prompt_list = if $duration >= ("5sec" | into duration) {
+      if $env.LAST_EXIT_CODE == 0 {
+        [ $duration ]
+      } else {
+        [ $"(ansi red_bold)✘", $duration ]
+      }
+    } else {
+        []
+    }
+
+    [ $segment_color, ($prompt_list | str join $" (ansi xterm_grey30)|($segment_color) "), " " ] | str join
 }
 
 # Use nushell functions to define your right and left prompt
@@ -19,7 +40,15 @@ let-env PROMPT_COMMAND_RIGHT = { || create_right_prompt }
 
 # The prompt indicators are environmental variables that represent
 # the state of the prompt
-let-env PROMPT_INDICATOR = { || "$ " }
+if $env.TERM == "linux" {
+  let-env PROMPT_INDICATOR = { || $"> " }
+} else {
+  let-env PROMPT_INDICATOR = { || $"(ansi green_bold) " }
+  #let-env PROMPT_INDICATOR = { || $"(ansi black) " }
+  #let-env PROMPT_INDICATOR = { || $"(ansi green_bold)❭ " }
+  #let-env PROMPT_INDICATOR = { || $"(ansi green)$ " }
+  #let-env PROMPT_INDICATOR = { || $"(ansi reset)(ansi green) " }
+}
 let-env PROMPT_INDICATOR_VI_INSERT = { || ": " }
 let-env PROMPT_INDICATOR_VI_NORMAL = { || " " }
 let-env PROMPT_MULTILINE_INDICATOR = { || "::: " }
@@ -56,4 +85,7 @@ let-env NU_PLUGIN_DIRS = [
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 # let-env PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
 
-let-env EDITOR = "nvim"
+#cat .config/termcolors | sh .local/bin/theme.sh
+sh .local/bin/theme.sh monokai-soda
+
+let-env EDITOR = "micro"
